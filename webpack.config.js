@@ -24,7 +24,12 @@ module.exports = (env) => {
                     use: [
                         MiniCssExtractPlugin.loader, // fallback to "style-loader" in development
                         { loader: "css-loader", options: { sourceMap: true } },
-                        'sass-loader',
+                        {
+                            loader: "sass-loader",
+                            options: {
+                              implementation: require("dart-sass"),
+                            },
+                          },
                     ],
                 },
             ],
