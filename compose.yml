@@ -1,0 +1,7 @@
+services:
+
+  app:
+    image: ricardopedias/docker-project:php83
+    container_name: app
+    volumes:
+      - .:/application
