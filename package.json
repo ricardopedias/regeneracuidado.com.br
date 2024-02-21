@@ -6,7 +6,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prod": "webpack --env production --config webpack.config.js",
-    "dev": "webpack --env development --config webpack.config.js"
+    "dev": "webpack --env development --config webpack.config.js",
+    "watch-scss": "nodemon -e scss -x \"npm run dev\"",
+    "watch-js": "nodemon -e js -x \"npm run dev\"",
+    "watch": "npm run watch-scss & npm run watch-js"
   },
   "keywords": [],
   "author": "",
@@ -15,6 +18,7 @@
     "css-loader": "^6.10.0",
     "mini-css-extract-plugin": "^2.8.0",
     "node-sass": "^9.0.0",
+    "nodemon": "^3.0.3",
     "sass": "^1.71.1",
     "sass-loader": "^14.1.1",
     "style-loader": "^3.3.4",
