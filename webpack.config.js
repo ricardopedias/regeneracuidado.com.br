@@ -11,7 +11,7 @@ module.exports = (env) => {
         entry: {
             app: ['./src/app.js', './src/app.scss']
         },
-        devtool: 'inline-source-map',
+        devtool: environment === 'production' ? 'hidden-source-map' : 'inline-source-map',
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: '[name].js',
@@ -22,12 +22,9 @@ module.exports = (env) => {
                 {
                     test: /\.scss$/,
                     use: [
-                    // fallback to style-loader in development
-                    environment !== 'production'
-                        ? 'style-loader'
-                        : MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    'sass-loader',
+                        MiniCssExtractPlugin.loader, // fallback to "style-loader" in development
+                        { loader: "css-loader", options: { sourceMap: true } },
+                        'sass-loader',
                     ],
                 },
             ],
@@ -39,41 +36,3 @@ module.exports = (env) => {
         ],
     }
 };
-
-// module.exports = {
-//     mode: "development",
-//     entry: [
-//         path.resolve(__dirname, './src/app.js'),
-//         path.resolve(__dirname, './src/app.scss')
-//     ],
-//     devtool: "eval-source-map",
-//     module: {
-//         rules: [
-//             {
-//                 test: /\.js$/,
-//                 exclude: /node_modules/,
-//                 use: ['babel-loader']
-//             },
-//             {
-//                 test: /\.scss$/,
-//                 exclude: /node_modules/,
-//                 generator: {
-//                     path: path.resolve(__dirname, './dist'),
-//                     filename: "bundle.css",
-//                 },
-//                 use: ["style-loader", "css-loader", "sass-loader"]
-//             }
-//         ]
-//     },
-//     resolve: {
-//         extensions: ['*', '.js', '.jsx']
-//     },
-//     output: {
-//         path: path.resolve(__dirname, './dist'),
-//         filename: 'bundle.js',
-//     },
-//     devServer: {
-//         contentBase: path.resolve(__dirname, './dist'),
-//         hot: true
-//     },
-// };

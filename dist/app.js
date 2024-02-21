@@ -1,2 +1,1 @@
 (()=>{"use strict";console.log("hoho"),cosnole.log("sss")})();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiYXBwLmpzIiwibWFwcGluZ3MiOiJtQkFDSUEsUUFBUUMsSUFBSSxRQUNaQyxRQUFRRCxJQUFJLE0iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9hcHBsaWNhdGlvbi8uL3NyYy9hbGVydC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZGVmYXVsdCBmdW5jdGlvbiBob2hvKCkge1xuICAgIGNvbnNvbGUubG9nKCdob2hvJylcbiAgICBjb3Nub2xlLmxvZygnc3NzJylcbn0iXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyIsImNvc25vbGUiXSwic291cmNlUm9vdCI6IiJ9
