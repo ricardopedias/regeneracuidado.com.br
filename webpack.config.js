@@ -27,7 +27,7 @@ module.exports = (env) => {
                         {
                             loader: "sass-loader",
                             options: {
-                              implementation: require("dart-sass"),
+                              implementation: require("dart-sass")
                             },
                           },
                     ],

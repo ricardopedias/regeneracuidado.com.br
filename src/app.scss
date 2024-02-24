@@ -1,4 +1,9 @@
+$env: 'development';
+$gap: 1em;
 
+@function production() {
+    @return 0;
+}
 
 // @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 // @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
@@ -11,52 +16,62 @@
     --nav-height: 40px;
 }
 
+@if production {
+    body {
+        background-color: red;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
-body > header {
-    background-color: gray;
-    height: 500px;
-}
+@import 'scss/container.scss';
 
-body > nav {
-    position: fixed;
-    top: 0;
-    background-color: red;
-    height: var(--nav-height);
-    width: 100%;
-}
+@import 'scss/blocks.scss';
 
-body > nav > ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
+// body > header {
+//     background-color: gray;
+//     height: 500px;
+// }
 
-body > nav > ul > li {
-    height: var(--nav-height);
-    line-height: var(--nav-height);
-    background-color: green;
-    padding: 0 10px;
-}
+// body > nav {
+//     position: fixed;
+//     top: 0;
+//     background-color: red;
+//     height: var(--nav-height);
+//     width: 100%;
+// }
+
+// body > nav > ul {
+//     display: flex;
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+
+// body > nav > ul > li {
+//     height: var(--nav-height);
+//     line-height: var(--nav-height);
+//     background-color: green;
+//     padding: 0 10px;
+// }
 
 
-.our-values {
-    background-color: #f4f7f8;
-    display: flex;
-}
+// .our-values {
+//     background-color: #f4f7f8;
+//     display: flex;
+// }
 
-.our-values div {
-    background-color: #1b5385;
-    color: white;
-    flex: auto;
-    font-family: monospace;
-    font-size: 13px;
-    margin: 1em;
-    min-width: 0;
-    padding: 0.5em;
-    width: 110px;
-}
+// .our-values div {
+//     background-color: #1b5385;
+//     color: white;
+//     flex: auto;
+//     font-family: monospace;
+//     font-size: 13px;
+//     margin: 1em;
+//     min-width: 0;
+//     padding: 0.5em;
+//     width: 110px;
+// }

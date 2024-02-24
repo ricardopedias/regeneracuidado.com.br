@@ -1,1 +1,0 @@
-{"version":3,"file":"app.js","mappings":"mBACIA,QAAQC,IAAI,QACZC,QAAQD,IAAI,M","sources":["webpack://application/./src/alert.js"],"sourcesContent":["export default function hoho() {\n    console.log('hoho')\n    cosnole.log('sss')\n}"],"names":["console","log","cosnole"],"sourceRoot":""}
