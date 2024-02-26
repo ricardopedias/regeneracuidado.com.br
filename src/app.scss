@@ -1,10 +1,6 @@
 $env: 'development';
 $gap: 1em;
 
-@function production() {
-    @return 0;
-}
-
 // @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 // @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
 // @media (min-width:600px) { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
@@ -16,20 +12,18 @@ $gap: 1em;
     --nav-height: 40px;
 }
 
-@if production {
-    body {
-        background-color: red;
-    }
-}
-
+main,
 body {
+    display: block;
     margin: 0;
     padding: 0;
 }
 
 @import 'scss/container.scss';
-
 @import 'scss/blocks.scss';
+@import 'scss/blocks-double.scss';
+@import 'scss/blocks-triple.scss';
+@import 'scss/blocks-quad.scss';
 
 // body > header {
 //     background-color: gray;
