@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Blocos duplos
+// - - - 
+// seção única em dispositivos móveis
+// seções duplas nos demais
+// -----------------------------------------------------------------------------
+
+@media (min-width:600px) {
+    .container > .double {
+        & > div {
+            flex-grow: 1;
+            flex-shrink: 0;
+            flex-basis: 45%;
+        }
+    }
+}
