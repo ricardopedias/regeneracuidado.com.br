@@ -1,0 +1,36 @@
+
+$containerColor: yellow;
+$wrapperColor: red;
+$blockColor: rgb(83, 109, 255);
+
+// container.scss
+
+.wrapper {
+    background-color: $wrapperColor;
+
+    & .container {
+        background-color: $containerColor;
+    }
+}
+
+// blocks
+
+.container > section {
+    & > div {
+        background-color: $blockColor;
+    }
+
+    &.double > div {
+        background-color: darken($blockColor, 10%);
+    }
+
+    &.triple > div {
+        background-color: darken($blockColor, 20%);
+    }
+
+    &.quad > div {
+        background-color: darken($blockColor, 30%);
+    }
+}
+
+

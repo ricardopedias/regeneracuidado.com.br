@@ -19,53 +19,21 @@ body {
     padding: 0;
 }
 
+header {
+    background-color: orange;
+}
+
+// .triple div {
+//     margin-top: 30px !important;
+
+//     &:nth-child(2) {
+//         margin-top: 0 !important;
+//     }
+// }
+
+@import 'scss/colors.scss';
 @import 'scss/container.scss';
 @import 'scss/blocks.scss';
 @import 'scss/blocks-double.scss';
 @import 'scss/blocks-triple.scss';
 @import 'scss/blocks-quad.scss';
-
-// body > header {
-//     background-color: gray;
-//     height: 500px;
-// }
-
-// body > nav {
-//     position: fixed;
-//     top: 0;
-//     background-color: red;
-//     height: var(--nav-height);
-//     width: 100%;
-// }
-
-// body > nav > ul {
-//     display: flex;
-//     margin: 0;
-//     padding: 0;
-//     list-style: none;
-// }
-
-// body > nav > ul > li {
-//     height: var(--nav-height);
-//     line-height: var(--nav-height);
-//     background-color: green;
-//     padding: 0 10px;
-// }
-
-
-// .our-values {
-//     background-color: #f4f7f8;
-//     display: flex;
-// }
-
-// .our-values div {
-//     background-color: #1b5385;
-//     color: white;
-//     flex: auto;
-//     font-family: monospace;
-//     font-size: 13px;
-//     margin: 1em;
-//     min-width: 0;
-//     padding: 0.5em;
-//     width: 110px;
-// }
