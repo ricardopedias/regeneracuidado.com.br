@@ -17,6 +17,9 @@ $blockColor: rgb(83, 109, 255);
 
 .container > section {
     & > div {
+        font-family: monospace;
+        font-size: 13px;
+        color: white;
         background-color: $blockColor;
     }
 
