@@ -19,10 +19,6 @@ body {
     padding: 0;
 }
 
-header {
-    background-color: orange;
-}
-
 // .triple div {
 //     margin-top: 30px !important;
 
@@ -37,3 +33,5 @@ header {
 @import 'scss/framework/blocks-double.scss';
 @import 'scss/framework/blocks-triple.scss';
 @import 'scss/framework/blocks-quad.scss';
+
+@import 'scss/home/jumbo.scss';
