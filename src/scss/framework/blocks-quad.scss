@@ -11,7 +11,8 @@
         &.break {
             flex-basis: 100%;
             display: block;
-            height: 0;
+            height: 0 !important;
+            min-height: 0 !important;
             padding: 0;
             margin-top: 0;
         }

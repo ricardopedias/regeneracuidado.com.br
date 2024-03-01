@@ -1,5 +1,6 @@
 $env: 'development';
 $gap: 1em;
+$textPrimary: #ad3f45;
 
 // @media (min-width:320px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */ }
 // @media (min-width:480px) { /* smartphones, Android phones, landscape iPhone */ }
@@ -8,15 +9,34 @@ $gap: 1em;
 // @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
 // @media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
-:root {
-    --nav-height: 40px;
+// :root {
+//     --nav-height: 40px;
+// }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-latin-300-normal.woff') format('woff');
 }
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-latin-700-normal.woff') format('woff');
+    font-weight: bold;
+}
+
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/solid';
+@import '~@fortawesome/fontawesome-free/scss/regular';
 
 main,
 body {
     display: block;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat';
+    font-weight: 'Light'
+    // font-weight: 200
 }
 
 // .triple div {
@@ -35,3 +55,4 @@ body {
 @import 'scss/framework/blocks-quad.scss';
 
 @import 'scss/home/jumbo.scss';
+@import 'scss/home/action-bar.scss';

@@ -7,9 +7,9 @@
     margin-top: $gap;
 
     & > div {
-       height: 200px;
+       min-height: 50px;
        min-width: 0;
-       padding: 0.5em;
+       
 
        & + div {
            margin-left: 0;

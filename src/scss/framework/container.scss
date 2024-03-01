@@ -22,6 +22,12 @@
     }
 }
 
+@media (max-width:966px) { 
+    .container section {
+        padding: 0 30px;
+    }
+}
+
 @media (min-width:900px) { 
     body {
         display: flex;

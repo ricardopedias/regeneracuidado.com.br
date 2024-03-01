@@ -4,25 +4,108 @@ body > header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 500px;
+    height: 550px;
     text-align: center;
+    position: relative;
 
-    // & picture, & img {
-    //     width: 100%;
-    //     max-width: 1272px;
-    //     max-height: 800px;
-    // }
+    & h1,
+    & h2 {
+        position: absolute;
+        top: 0;
+        display: none;
+        margin:0;
+        text-align: left;
+        color: $textPrimary;
+        font-size: 24px;
+        font-family: 'Montserrat';
+    }
+
+    & h1 {
+        font-weight: bold;
+    }
+
+    & a {
+        display: block;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        margin: 0;
+        margin-left: -140px;
+        text-align: left;
+        text-decoration: none;
+        color: $textPrimary;
+        font-size: 16px;
+        font-family: 'Montserrat';
+        width: 280px;
+        
+        background-color: rgba(255, 255, 255, .9);
+        border-radius: 40px;
+        border-width: 0;
+        cursor: pointer;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, .1);
+
+        & i {
+            margin: 20px;
+            margin-top: 22px;
+            transform: scale(2.5);
+        }
+
+        &:hover {
+            background-color: lighten($textPrimary, 10%);
+            color: #fff;
+        }
+    }
+}
+
+@media (min-width:510px) { 
+    body > header {
+        & h1 {
+            top: 260px;
+            left: 5%;
+            display: block;
+            width: 40%;
+            font-size: 24px;
+        }
+
+        & a {
+            bottom: 120px;
+            left: 5%;
+            font-size: 16px;
+            width: 280px;
+            margin-left: 0;
+        }
+    }
 }
 
 @media (min-width:800px) { 
     body > header {
         height: 650px;
+
+        & h1 {
+            top: 360px;
+            font-size: 28px;
+        }
     }
 }
 
 @media (min-width:1200px) { 
     body > header {
         height: 800px;
+
+        & h1 {
+            top: 420px;
+            font-size: 32px;
+            width: 30%;
+        }
+
+        & h2 {
+            display: block;
+            top: 520px;
+            font-size: 16px;
+            width: 45%;
+            left: 5%;
+            font-weight: 300;
+        }
     }
 }
 
