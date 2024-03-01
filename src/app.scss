@@ -16,6 +16,13 @@ $textPrimary: #ad3f45;
 @font-face {
     font-family: 'Montserrat';
     src: url('fonts/montserrat-latin-300-normal.woff') format('woff');
+    font-weight: normal
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/montserrat-latin-500-normal.woff') format('woff');
+    font-weight: medium;
 }
 
 @font-face {
@@ -35,8 +42,6 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat';
-    font-weight: 'Light'
-    // font-weight: 200
 }
 
 // .triple div {
