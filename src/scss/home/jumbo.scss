@@ -55,6 +55,12 @@ body > header {
     }
 }
 
+@media (max-width:510px) { 
+    body > header {
+        padding-top: 50px;
+    }
+}
+
 @media (min-width:510px) { 
     body > header {
         & h1 {
