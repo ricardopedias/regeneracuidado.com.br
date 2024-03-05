@@ -5,14 +5,64 @@ footer.content {
     background-repeat: no-repeat;
     background-position-y: -5px;
 
-    & div {
-        & img {
-            position: relative;
-            left: 50%;
-            width: 313px;
-            height: 241px;
-            margin-left: -156px;
-            margin-top: -70px;
+    & > .container > section {
+        & > div {
+            display: grid;
+            grid-template-areas:
+                'logo'
+                'colone';
+            grid-template-columns: 100% 100%;
+            padding-bottom: 20px;
+
+            & img {
+                grid-area: logo;
+                position: relative;
+                left: 50%;
+                width: 313px;
+                height: 241px;
+                margin-left: -156px;
+                margin-top: -70px;
+            }
+
+            & > div.column-one {
+                grid-area: colone;
+                color: #2a475d;
+                padding-left: 10%;
+                padding-top: 20px;
+
+                & span {
+                    display: block;
+                    padding-bottom: 20px; 
+                }
+            }
+
+            & > div.column-two,
+            & > div.column-three {
+                display: none;
+            }
+
+            // & > div.column-one {
+            //     grid-area: colone;
+            //     color: #2a475d;
+            //     padding-left: 20px;
+
+            //     & span {
+            //         display: block;
+            //         padding-bottom: 20px; 
+            //     }
+            // }
+
+            // & > div.column-two,
+            // & > div.column-three {
+            //     padding-top: 40px;
+
+            //     & a {
+            //         display: block;
+            //         text-decoration: none;
+            //         color: #2a475d;
+            //         padding-bottom: 20px; 
+            //     }
+            // }
         }
     }
 }
@@ -68,6 +118,45 @@ footer.bottom {
 
             span {
                 display: inline;
+            }
+        }
+    }
+}
+
+@media (min-width:800px) {
+    footer.content {
+        & > .container > section {
+            & > div {
+                display: grid;
+                grid-template-areas:
+                    'logo logo logo'
+                    'colone coltwo colthree';
+                grid-template-columns: 50% 25% 25%;
+                padding-bottom: 20px;
+    
+                & > div.column-one {
+                    grid-area: colone;
+                    color: #2a475d;
+                    padding-left: 20px;
+    
+                    & span {
+                        display: block;
+                        padding-bottom: 20px; 
+                    }
+                }
+    
+                & > div.column-two,
+                & > div.column-three {
+                    display: block;
+                    padding-top: 40px;
+    
+                    & a {
+                        display: block;
+                        text-decoration: none;
+                        color: #2a475d;
+                        padding-bottom: 20px; 
+                    }
+                }
             }
         }
     }
