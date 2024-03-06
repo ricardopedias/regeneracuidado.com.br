@@ -23,6 +23,7 @@ nav {
         & li {
             display: block;
             padding: 0 20px;
+            transition: all .5s;
 
             & a {
                 padding: 0;
@@ -98,6 +99,16 @@ nav {
         & li:nth-child(2),
         & li:nth-child(3) {
             display: none;
+        }
+    }
+}
+
+@media (max-width:420px) { 
+    nav {
+        & ul:first-child {
+            & li:nth-child(1) {
+                display: none;
+            }
         }
     }
 }

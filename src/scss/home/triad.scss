@@ -1,0 +1,54 @@
+
+
+h2.triad {
+    font-size: 50px;
+    color: #274760;
+    text-align: center;
+}
+
+.container.triad {
+    transition: all .5s;
+    margin: 50px 0;
+
+    & section {
+        & div {
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+            padding: 30px;
+            color: #274760;
+            border: 1px solid #ccc;
+
+            & h2 {
+                margin-top: 0;
+
+                & i {
+                    background-color: #274760;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 20px;
+                    padding: 5px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+
+            &:nth-child(2) {
+                color: #ad3f45;
+                border: 1px solid #ad3f45;
+                background-color: lighten(#ad3f45, 50%);
+                margin-top: -50px;
+
+                & h2 {
+                    & i {
+                        background-color: #ad3f45;
+                    }
+                }
+            }
+
+            // & + div {
+            //     margin-left: 3em;
+            // }
+        }
+    }
+}

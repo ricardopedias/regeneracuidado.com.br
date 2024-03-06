@@ -1,6 +1,7 @@
 
 .action-bar {
     margin-top: -100px;
+    transition: all .5s;
 
     & section {
         background-color: #fff;
@@ -79,14 +80,60 @@
     }
 }
 
-@media (max-width:1310px) { 
-    .action-bar.large {
-        display: none;
+@media (max-width:600px) { 
+    .action-bar section {
+        border-radius: 0 ;
+        padding: 20px 0;
+
+        & div {
+            grid-template-areas:
+                'icon title'
+                'icon text';
+            grid-template-columns: 36% 64%;
+            height: 100px;
+            margin-top: 0;
+        }
+
+        & div:nth-child(1) {
+            & h3 {
+                font-size: 16px;
+            }
+
+            & p {
+                font-size: 22px;
+            }
+        }
+
+        & div:nth-child(2),
+        & div:nth-child(3),
+        & div:nth-child(4) {
+            display: none;
+        }
+
+        & div:nth-child(5) {
+            margin-top: 0;
+            height: 80px;
+
+            & button {
+                margin-top: -40px;
+            }
+        }
     }
 }
 
-@media (min-width:1311px) { 
-    .action-bar.medium {
-        display: none;
+@media (min-width:600px) and (max-width: 1310px) { 
+    .action-bar section {
+        padding: 20px 0;
+
+        & div {
+            height: 100px;
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width:900px) { 
+    .action-bar section {
+        border-radius: 0 ;
     }
 }
