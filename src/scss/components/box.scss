@@ -1,0 +1,17 @@
+
+@media (max-width:576px) { 
+    .wrap {
+        & div {
+            margin-left: $box-gap;
+            margin-right: $box-gap;
+        }
+    }   
+}
+
+@import 'box-double.scss';
+@import 'box-triple.scss';
+@import 'box-quad.scss';
+
+@import 'box-double-static.scss';
+@import 'box-triple-static.scss';
+@import 'box-quad-static.scss';

@@ -53,16 +53,18 @@ body {
 //     }
 // }
 
+@import 'scss/components/components.scss';
+
 // @import 'scss/framework/colors.scss';
-@import 'scss/framework/container.scss';
-@import 'scss/framework/blocks.scss';
-@import 'scss/framework/blocks-double.scss';
-@import 'scss/framework/blocks-triple.scss';
-@import 'scss/framework/blocks-quad.scss';
+// @import 'scss/framework/container.scss';
+// @import 'scss/framework/blocks.scss';
+// @import 'scss/framework/blocks-double.scss';
+// @import 'scss/framework/blocks-triple.scss';
+// @import 'scss/framework/blocks-quad.scss';
 
-@import 'scss/home/jumbo.scss';
-@import 'scss/home/navbar.scss';
-@import 'scss/home/actionbar.scss';
-@import 'scss/home/triad.scss';
+// @import 'scss/home/jumbo.scss';
+// @import 'scss/home/navbar.scss';
+// @import 'scss/home/actionbar.scss';
+// @import 'scss/home/triad.scss';
 
-@import 'scss/home/footer.scss';
+// @import 'scss/home/footer.scss';

@@ -1,0 +1,54 @@
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+.holder,
+.wrap {
+    width: 100%;
+}
+
+@media (min-width:576px) { 
+    .holder {
+        display: flex;
+        justify-content: center;
+
+        .wrap {
+            width: 540px;
+        }
+    }
+}
+
+// Tablet Devices
+// Medium      ≥768px  = 720px
+
+@media (min-width:768px) { 
+    .holder {
+        .wrap {
+            width: 720px;
+        }
+    }
+}
+
+// Desktop Devices > 992px
+// Large       ≥992px  = 960px
+// X-Large     ≥1200px = 1140px
+// XX-Large    ≥1400px = 1320px
+
+@media (min-width:992px) { 
+    .holder .wrap {
+        width: 960px;
+    }
+}
+
+@media (min-width:1200px) { 
+    .holder .wrap {
+        width: 1140px;
+    }
+}
+
+@media (min-width:1400px) { 
+    .holder .wrap {
+        width: 1320px;
+    }
+}
