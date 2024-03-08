@@ -1,0 +1,107 @@
+
+
+h2.our-values {
+    font-size: 50px;
+    color: #274760;
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    padding: 40px 20px;
+}
+
+.holder.our-values {
+    font-family: 'Montserrat';
+
+    & section {
+        & > div {
+            background-color: #fff;
+            border-radius: 25px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
+            padding: 30px;
+            color: #274760;
+            border: 1px solid #ccc;
+            transition: margin-top .5s;
+            height: 200px;
+
+            & h2 {
+                margin-top: 0;
+                font-size: 26px;
+                font-weight: 700;
+
+                & i {
+                    background-color: #274760;
+                    width: 27px;
+                    height: 27px;
+                    border-radius: 20px;
+                    font-size: 18px;
+                    padding: 10px 5px 0 5px;
+                    color: #fff;
+                    text-align: center;
+                }
+            }
+
+            & hr {
+                border: 0;
+                border-radius: 2px;
+                height: 4px;
+                margin: 15px 20%;
+                display: block;
+                background-color: #eee;
+            }
+
+            & p {
+                font-weight: 300;
+                line-height: 24px;
+            }
+
+            &:nth-child(2) {
+                color: #ad3f45;
+                border: 1px solid #ad3f45;
+                background-color: lighten(#ad3f45, 50%);
+                // margin-top: -50px;
+
+                & h2 {
+                    & i {
+                        background-color: #ad3f45;
+                    }
+                }
+
+                & hr {
+                    background-color: rgb(173, 63, 69, .1);
+                }
+            }
+
+            // & + div {
+            //     margin-left: 3em;
+            // }
+        }
+    }
+}
+
+@media (min-width:1200px) { 
+    h2.our-values {
+        padding-bottom: 100px;
+    }
+
+    .holder.our-values {
+        font-family: 'Montserrat';
+    
+        & section {
+            & > div:nth-child(2) {
+                color: #ad3f45;
+                border: 1px solid #ad3f45;
+                background-color: lighten(#ad3f45, 50%);
+                margin-top: -50px;
+                margin-bottom: 50px;
+                transition: margin-top .5s;
+
+                & h2 {
+                    & i {
+                        background-color: #ad3f45;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -8,7 +8,7 @@ $box-quad-static-width: 260px;
 .wrap.box-quad-static {
     display: grid;
 
-    & div {
+    & > div {
         min-height: $box-min-height;
 
         & + div {
@@ -28,19 +28,19 @@ $box-quad-static-width: 260px;
 
         grid-template-columns: auto $box-quad-static-width auto;
 
-        & div:nth-child(1) {
+        & > div:nth-child(1) {
             grid-area: one;
         }
 
-        & div:nth-child(2) {
+        & > div:nth-child(2) {
             grid-area: two;
         }
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             grid-area: three;
         }
 
-        & div:nth-child(4) {
+        & > div:nth-child(4) {
             grid-area: four;
         }
     }
@@ -55,15 +55,15 @@ $box-quad-static-width: 260px;
 
         grid-template-columns: $box-quad-static-width $box-gap $box-quad-static-width;
 
-        & div:nth-child(2) {
+        & > div:nth-child(2) {
             margin-top: 0;
         }
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             margin-top: $box-gap;
         }
 
-        & div:nth-child(4) {
+        & > div:nth-child(4) {
             margin-top: $box-gap;
         }
     }
@@ -82,21 +82,21 @@ $box-quad-static-width: 260px;
 
         grid-template-columns: auto $box-quad-static-width auto $box-quad-static-width auto;
 
-        & div:nth-child(1) {
+        & > div:nth-child(1) {
             grid-area: one;
         }
 
-        & div:nth-child(2) {
+        & > div:nth-child(2) {
             grid-area: two;
             margin-top: 0;
         }
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             grid-area: three;
             margin-top: $box-gap;
         }
 
-        & div:nth-child(4) {
+        & > div:nth-child(4) {
             grid-area: four;
             margin-top: $box-gap;
         }
@@ -126,11 +126,11 @@ $box-quad-static-width: 260px;
             auto
             ;
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             margin-top: 0;
         }
 
-        & div:nth-child(4) {
+        & > div:nth-child(4) {
             margin-top: $box-gap;
         }
     }
@@ -162,11 +162,11 @@ $box-quad-static-width: 260px;
             auto 
             ;
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             margin-top: 0;
         }
 
-        & div:nth-child(4) {
+        & > div:nth-child(4) {
             margin-top: 0;
         }
     }

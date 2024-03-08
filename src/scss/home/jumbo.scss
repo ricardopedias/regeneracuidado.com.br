@@ -16,7 +16,7 @@ body > header {
         display: none;
         margin:0;
         text-align: left;
-        color: $textPrimary;
+        color: $text-primary;
         font-size: 24px;
         font-family: 'Montserrat';
         transition: all .5s;
@@ -35,7 +35,7 @@ body > header {
         margin-left: -125px;
         text-align: left;
         text-decoration: none;
-        color: $textPrimary;
+        color: $text-primary;
         font-size: 16px;
         font-family: 'Montserrat';
         width: 250px;
@@ -51,7 +51,7 @@ body > header {
         }
 
         &:hover {
-            background-color: lighten($textPrimary, 10%);
+            background-color: lighten($text-primary, 10%);
             color: #fff;
         }
     }

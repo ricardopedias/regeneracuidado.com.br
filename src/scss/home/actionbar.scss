@@ -1,66 +1,52 @@
 
 .action-bar {
-    margin-top: -100px;
-    transition: all .5s;
+    margin-top: -80px;
 
-    & section {
+    & .wrap {
         background-color: #fff;
-        border-radius: 25px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, .3);
         position: relative;
+        padding-top: $box-gap;
+        padding-bottom: $box-gap;
 
-        & div {
-            height: 170px;
-            // padding: 20px;
+        & > div {
             display: grid;
             grid-template-areas:
-                'icon title'
-                'icon text';
-            grid-template-columns: 50% 50%;
-            position: relative;
+                'icon content';
+            grid-template-columns: 60px auto;
             color: #274760;
+            align-items: center;
+            width: 260px;
+            font-family: 'Montserrat';
+            padding-left: 10px;
+
+            &.to-contact:hover {
+                border-radius: 20px;
+                background-color: #eee;
+            }
 
             & > i {
                 grid-area: icon;
-                font-size: 42px;
-                position: absolute;
-                top: 50%;
-                margin-top: -30px;
-                right: 10px;
+                font-size: 56px;
             }
 
-            & > h3 {
-                position: absolute;
-                bottom: 0;
-                display: flex;
-                text-align: left;
-                grid-area: title;
-                margin: 0;
-                font-size: 14px;
-            }
+            & > div {
+                padding-left: 10px;
 
-            & > p,
-            & > a {
-                text-align: left;
-                grid-area: text;
-                margin: 0;
-                margin-top: 5px;
-                font-size: 18px;
-                font-weight: medium;
-                color: #c2c2c2;
-            }
-
-            & > a {
-                text-decoration: none;
+                & h3 {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+    
+                & p {
+                    font-size: 18px;
+                    color: #c2c2c2;
+                    padding-top: 10px;
+                }
             }
 
             & > button {
                 height: 60px;
-                position: absolute;
-                top: 50%;
-                margin-top: -25px;
-                right: 50%;
-                margin-right: -100px;
                 width: 200px;
                 background-color: #37c871;
                 border-radius: 50px;
@@ -80,60 +66,14 @@
     }
 }
 
-@media (max-width:600px) { 
-    .action-bar section {
-        border-radius: 0 ;
-        padding: 20px 0;
+@media (min-width:576px) { 
+    .action-bar .wrap {
+        transition: width .5s;
+        border-radius: 25px;
 
-        & div {
-            grid-template-areas:
-                'icon title'
-                'icon text';
-            grid-template-columns: 36% 64%;
-            height: 100px;
-            margin-top: 0;
+        & > div {
+            padding-left: 20px;
+            width: 240px;
         }
-
-        & div:nth-child(1) {
-            & h3 {
-                font-size: 16px;
-            }
-
-            & p {
-                font-size: 22px;
-            }
-        }
-
-        & div:nth-child(2),
-        & div:nth-child(3),
-        & div:nth-child(4) {
-            display: none;
-        }
-
-        & div:nth-child(5) {
-            margin-top: 0;
-            height: 80px;
-
-            & button {
-                margin-top: -40px;
-            }
-        }
-    }
-}
-
-@media (min-width:600px) and (max-width: 1310px) { 
-    .action-bar section {
-        padding: 20px 0;
-
-        & div {
-            height: 100px;
-            margin-top: 0;
-        }
-    }
-}
-
-@media (max-width:900px) { 
-    .action-bar section {
-        border-radius: 0 ;
     }
 }

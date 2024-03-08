@@ -6,7 +6,7 @@
 .wrap.box-triple {
     display: grid;
 
-    & div {
+    & > div {
         min-height: $box-min-height;
 
         & + div {
@@ -34,16 +34,16 @@
 
         grid-template-columns: $column $column $box-gap $column $column;
 
-        & div:nth-child(1) {
+        & > div:nth-child(1) {
             grid-area: one;
         }
 
-        & div:nth-child(2) {
+        & > div:nth-child(2) {
             grid-area: two;
             margin-top: 0;
         }
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             grid-area: three;
             margin-top: $box-gap;
         }
@@ -65,7 +65,7 @@
 
         grid-template-columns: $column $box-gap $column $box-gap $column;
 
-        & div:nth-child(3) {
+        & > div:nth-child(3) {
             margin-top: 0;
         }
     }

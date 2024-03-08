@@ -8,28 +8,3 @@ br {
     height: $box-gap;
     line-height: $box-gap;
 }
-
-// abaixo é somente para melhor identificação dos componentes
-
-.wrap div {
-    background-color: red;
-    border-radius: 10px;
-}
-
-p {
-    display: block;
-    height: 300px;
-    margin: 0;
-}
-
-.one {
-    background-color: rgba(0, 0, 0, .05);
-}
-
-.two {
-    background-color: rgba(0, 0, 0, .1);
-}
-
-.three {
-    background-color: rgba(26, 146, 226, .4);
-}

@@ -4,7 +4,7 @@
 // Small       ≥576px  = 540px
 
 .wrap.box-double-static {
-    & div {
+    & > div {
         min-height: $box-min-height;
 
         & + div {
@@ -22,11 +22,11 @@
 
         grid-template-columns: auto 350px auto;
 
-        & div:nth-child(1) {
+        & > div:nth-child(1) {
             grid-area: one;
         }
 
-        & div:nth-child(2) {
+        & > div:nth-child(2) {
             grid-area: two;
         }
     }
@@ -42,11 +42,11 @@
             '. one . two .';
         grid-template-columns: auto 350px auto 350px auto;
 
-        & div:nth-child(1) {
+        & > div:nth-child(1) {
             grid-area: one;
         }
 
-        & div:nth-child(2) {
+        & > div:nth-child(2) {
             grid-area: two;
             margin-top: 0;
         }
