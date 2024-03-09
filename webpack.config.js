@@ -1,5 +1,6 @@
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = (env) => {
     let environment = env.production === true
@@ -15,6 +16,7 @@ module.exports = (env) => {
         output: {
             path: path.resolve(__dirname, 'dist'),
             filename: '[name].js',
+            // publicPath: "",
             clean: true,
         },
         module: {
@@ -32,11 +34,22 @@ module.exports = (env) => {
                           },
                     ],
                 },
+                // { test: /\.png$/, type: "asset/resource" },
             ],
         },
         plugins: [
             new MiniCssExtractPlugin({
                 filename: '[name].css',
+            }),
+            new HtmlWebpackPlugin({
+                title: "Regenera Cuidado",
+                template: "src/page-home.html",
+                filename: 'index.html'
+            }),
+            new HtmlWebpackPlugin({
+                title: "Regenera Cuidado",
+                template: "src/page-faleconosco.html",
+                filename: 'faleconosco.html'
             }),
         ],
     }

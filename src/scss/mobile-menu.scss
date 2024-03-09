@@ -5,16 +5,16 @@ $navHeight: 80px;
 // Extra small <576px  = 100%
 // Small       ≥576px  = 540px
 
-body.mobile-bar {
+body.mobile-menu {
     position: fixed;
     width: 100%;
 
-    nav.mobile-bar {
+    nav.mobile-menu {
         display: block;
     }
 }
 
-nav.mobile-bar {
+nav.mobile-menu {
     display: none;
     position: absolute;
     top: 0;
@@ -77,7 +77,7 @@ nav.mobile-bar {
 }
 
 // @media (min-width:576px) { 
-//     nav.mobile-bar {
+//     nav.mobile-menu {
 //         & ul {
 //             width: 50%;
 //        }
@@ -88,7 +88,7 @@ nav.mobile-bar {
 // Medium      ≥768px  = 720px
 
 // @media (min-width:768px) { 
-//     nav.mobile-bar {
+//     nav.mobile-menu {
 //         & ul {
 //             width: 300px;
 //        }
@@ -101,7 +101,7 @@ nav.mobile-bar {
 // // XX-Large    ≥1400px = 1320px
 
 // @media (min-width:1044px) { 
-//     nav.mobile-bar {
+//     nav.mobile-menu {
 //         & ul {
 //             width: 300px;
 //        }

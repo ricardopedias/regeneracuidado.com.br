@@ -37,9 +37,11 @@ body {
 
 @import 'scss/components/components.scss';
 
-@import 'scss/home/jumbo.scss';
-@import 'scss/home/navigation-bar.scss';
+
+@import 'scss/home/header.scss';
 @import 'scss/home/action-bar.scss';
 @import 'scss/home/our-values.scss';
-@import 'scss/home/footer.scss';
-@import 'scss/home/mobile-bar.scss';
+
+@import 'scss/navigation-bar.scss';
+@import 'scss/footer.scss';
+@import 'scss/mobile-menu.scss';

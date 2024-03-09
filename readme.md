@@ -59,3 +59,9 @@ https://webpack.js.org/loaders/sass-loader/
 https://dev.to/deepanjangh/setting-up-css-and-sass-with-webpack-3cg
 
 https://github.com/hughsk/google-fonts/tree/master
+
+"html-webpack-plugin": "^5.6.0",
+Para processar templates html
+
+"html-loader": "^5.0.0",
+Para incluir pedaçõs de templates
