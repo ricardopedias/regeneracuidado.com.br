@@ -18,32 +18,31 @@ Ok. Pela parte do GitHub já está tudo pronto. Agora falta apenas as configura�
 
 Faça o login no site do registro.br e clique no domínio registrado para seu projeto.
 
-- Marque a opção Utilizar os servidores do Registro.br
-- Clique em Salvar & Editar DNS
-- Clique em Modo Avançado
-- Agora clique em +Record para setar o DNS do seu projeto no github.
+Na seção "DNS", existem três opções:
 
-### Edição de Zona
+- Você está utilizando os servidores DNS do Registro.br;
+- Alterar servidores DNS
+- Configurar Zona DNS;
 
-O Github agora disponibiliza dois endereços para seus servidores DNS. É preciso cadastrar os dois para o mesmo domínio.
+Clique na opção "Configurar Zona DNS" e escolha o "Modo Avançado".
 
-- Deixe o campo de subdomínios vazio.
-- No campo Tipo selecione A.
-- No campo Dados coloque o seguinte endereço: 192.30.252.153
-- Clique em +Record para abrir um novo cadastro.
+A seguinte mensagem aparecerá:
 
-Repita a operação cadastrando o segundo ip 192.30.252.154.
+> No momento, os servidores DNS do domínio se encontram em transição. Servidores DNS externos poderão ser delegados em seu domínio em aproximadamente 2h4m45s
 
-Agora precisamos colocar o subdomínio www para funcionar também.
+Clique novamente na opção "Configurar Zona DNS" e adicione "Nova Entrada" com as seguites opções:
 
-- No campo subdomínio coloque www.
-- No campo Tipo escolha CNAME
-- No campo Dados coloque o endereço utilizado no arquivo CNAME de seu projeto: seuprojeto.com.br.
-- Clique em Salvar.
+| Tipo | Nome | Endereço |
+|:--:  |:--:  |:--:      |
+| A    | regeneracuidado.com.br | 185.199.108.153 |
+| A    | regeneracuidado.com.br | 185.199.109.153 |
+| A    | regeneracuidado.com.br | 185.199.110.153 |
+| A    | regeneracuidado.com.br | 185.199.111.153 |
+| CNAME| www | regeneracuidado.com.br |
 
-Pronto!
+Clique em "Salvar alterações"
 
-### Observações
+### Agora é aguardar
 
 O tempo para que as alterações de DNS sejam visíveis para toda a internet é de até 24 horas, segundo o próprio registro.br
 
@@ -51,7 +50,9 @@ As alterações feitas no branch gh-pages do GitHub podem demorar até 10 minuto
 
 ## Mais informações e referências
 
-Acesse a página de ajuda do [GitHubPages](https://help.github.com/categories/20/articles) para mais informações sobre a criação de sites diferenciados para seu projeto, com templates, páginas de erro, redirecionamento, entre outras coisas.
+Acesse a página de ajuda do [GitHubPages](https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages) para mais informações sobre a criação de sites diferenciados para seu projeto, com templates, páginas de erro, redirecionamento, entre outras coisas.
+
+https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 
 https://webpack.js.org/loaders/sass-loader/
 
