@@ -22,30 +22,33 @@
     <body>
         <header>
             <picture>
-                <source srcset="src/img/header-iphone.png" media="(max-width: 510px)" />
-                <source srcset="src/img/header-ipad.png" media="(max-width: 800px)" />
+                <source srcset="src/img/header-iphone.png" media="(max-width: 575px)" />
+                <source srcset="src/img/header-ipad.png" media="(max-width: 767px)" />
                 <source srcset="src/img/header-laptop.png" media="(max-width: 1200px)" />
                 <img src="src/img/header-desktop.png" alt="" />
             </picture>
             
-            <h1>
-                Curamos suas feridas muito mais rápido
-            </h1>
+            <div class="holder">
+                <section class="wrap">
+                    <h1>
+                        Curamos suas feridas muito mais rápido
+                    </h1>
+        
+                    <h2>
+                        Através de um plano de cuidados que permita as pessoas 
+                        vivenciarem ao máximo sua autonomia, gerenciando os riscos 
+                        e mantendo o indivíduo saudável física, mental e espiritualmente.
+                    </h2>
 
-            <h2>
-                Através de um plano de cuidados que permita as pessoas 
-                vivenciarem ao máximo sua autonomia, gerenciando os riscos 
-                e mantendo o indivíduo saudável física, mental e espiritualmente.
-            </h2>
-
-            <button type="button">
-                <i class="fa-regular fa-circle-play fa-2xl"></i>
-
-                Veja como trabalhamos
-            </button>
+                    <button type="button">
+                        <i class="fa-regular fa-circle-play fa-2xl"></i>
+                        Veja como trabalhamos
+                    </button>
+                </section>
+            </div>
         </header>
 
-        <nav>
+        <nav class="navigation-bar">
             <ul>
                 <li>
                     <a href="#">
@@ -98,9 +101,11 @@
                     </a>
                 </li>
 
-                <li><a href="#">
-                    <i class="fa-solid fa-bars fa-xl"></i>
-                    <span>Mobile Button</span></a>
+                <li class="mobile-button">
+                    <a href="javascript:void()">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                        <span>Mobile Button</span>
+                    </a>
                 </li>
             </ul>
         </nav>
@@ -208,12 +213,16 @@
                                 <i class="fa-solid fa-car-side"></i>
                                 Rua das acácias, 258, 12578-665 Jacareí, SP
                             </span>
-    
+                        </p>
+
+                        <p>
                             <span>
                                 <i class="fa-solid fa-phone-volume"></i>
                                 (99) 9 9999-99
                             </span>
-    
+                        </p>
+
+                        <p>
                             <span>
                                 <i class="fa-solid fa-envelope"></i>
                                 contato@regeneracuidado.com.br
@@ -240,187 +249,83 @@
             </section>
         </footer>
 
-        <br><br><br>
-        <!-- 
+        <footer class="holder bottom">
+            <section class="wrap box-double">
+                <div class="social">
+                    <span>Siga-nos</span>
 
-        <footer class="wrapper content">
-            <div class="container">
-                <section class="single">
-                    <div>
-                        <img src="src/img/logo-footer.png">
+                    <a href="#">
+                        <i class="fa-brands fa-facebook fa-xl"></i>
+                        <span>Facebook</span>
+                    </a>
 
-                        <div class="column-one">
-                            <h2>Regenera Cuidado</h2>
+                    <a href="#">
+                        <i class="fa-brands fa-instagram fa-xl"></i>
+                        <span>Instagram</span>
+                    </a>
 
-                            <span>
-                                <i class="fa-solid fa-car-side"></i>
-                                Rua das acácias, 258, 12578-665 Jacareí, SP
-                            </span>
+                    <a href="#">
+                        <i class="fa-brands fa-youtube fa-xl"></i>
+                        <span>Youtube</span>
+                    </a>
+                </div>
 
-                            <span>
-                                <i class="fa-solid fa-phone-volume"></i>
-                                (99) 9 9999-99
-                            </span>
-
-                            <span>
-                                <i class="fa-solid fa-envelope"></i>
-                                contato@regeneracuidado.com.br
-                            </span>
-                        </div>
-
-                        <div class="column-two">
-                            <a href="">Sobre Nós</a>
-                            <a href="">Nossa História</a>
-                            <a href="">Nosso Trabalho</a>
-                            <a href="">Departamentos</a>
-                            <a href="">Blog</a>
-                        </div>
-
-                        <div class="column-three">
-                            <a href="">Fale conosco</a>
-                            <a href="">Depoimentos</a>
-                            <a href="">FAQ</a>
-                            <a href="">Privacidade</a>
-                            <a href="">Termos e Condições</a>
-                        </div>
-                    </div>
-                </section>
-            </div>
+                <div class="copy">
+                    Copyright © 2024 Regenera. 
+                    <span>Todos os direitos reservados.</span>
+                </div>
+            </section>
         </footer>
 
-        <footer class="wrapper bottom">
-            <div class="container">
-                <section class="double">
-                    <div class="social">
-                        <span>Siga-nos</span>
-
-                        <a href="#">
-                            <i class="fa-brands fa-facebook fa-xl"></i>
-                            <span>Facebook</span>
-                        </a>
-    
-                        <a href="#">
-                            <i class="fa-brands fa-instagram fa-xl"></i>
-                            <span>Instagram</span>
-                        </a>
-    
-                        <a href="#">
-                            <i class="fa-brands fa-youtube fa-xl"></i>
-                            <span>Youtube</span>
-                        </a>
-                    </div>
-
-                    <div class="copy">
-                        Copyright © 2024 Regenera. 
-                        <span>Todos os direitos reservados.</span>
-                    </div>
-                </section>
-            </div>
-        </footer> -->
-
-<!--         
-
-        <div class="wrapper">
-            <div class="container">
-                <section class="double">
-                    <div>
-                        <h2>Double</h2>
-                        <p>sdfsdfdsfdsfsdfds</p>
-                    </div>
-    
-                    <div>Double</div>
-                </section>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="container">
-                <section class="triple">
-                    <div>
-                        <h2>Triple</h2>
-                        <p>sdfsdfdsfdsfsdfds</p>
-                    </div>
-    
-                    <div>Triple</div>
-
-                    <div>Triple</div>
-                </section>
-            </div>
-        </div>
-
-        <div class="wrapper">
-            <div class="container">
-                <section class="quad">
-                    <div>
-                        <h2>Quad</h2>
-                        <p>sdfsdfdsfdsfsdfds</p>
-                    </div>
-    
-                    <div>Quad</div>
-
-                    <div class="break"></div>
-
-                    <div>Quad</div>
-
-                    <div>Quad</div>
-                </section>
-            </div>
-        </div> -->
-
-        <!-- <nav>
+        <nav class="mobile-bar">
             <ul>
-                <li>aaa</li>
-                <li>bbb</li>
-                <li>ccc</li>
+                <li class="mobile-button">
+                    <i class="fa-solid fa-times fa-xl"></i>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-dove fa-xl"></i>
+                        <span>Nossa História</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-heart-pulse fa-xl"></i>
+                        <span>Nosso Trabalho</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-house-medical fa-xl"></i>
+                        <span>Departamentos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-circle-info fa-xl"></i>
+                        <span>Perguntas</span>
+                        <span class="optional">Frequentes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-face-smile-beam fa-xl"></i>
+                        <span>Depoimentos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <i class="fa-solid fa-microphone-lines fa-xl"></i>
+                        <span>Fale conosco</span>
+                    </a>
+                </li>
             </ul>
-        </nav> -->
-
-        <!-- <div class="container">
-            <section class="single">
-                <div></div>
-            </section>
-
-            <section class="double">
-                <div>
-                    <h2>sfsdfdsfsdfdsf</h2>
-                    <p>sdfsdfdsfdsfsdfds</p>
-                </div>
-
-                <div></div>
-            </section>
-        </div>
-
-        <div class="container">
-            <section class="triple">
-                <div>
-                    <h2>sfsdfdsfsdfdsf</h2>
-                    <p>sdfsdfdsfdsfsdfds</p>
-                </div>
-
-                <div></div>
-
-                <div></div>
-            </section>
-
-            <section class="quad">
-                <div>
-                    <h2>sfsdfdsfsdfdsf</h2>
-                    <p>sdfsdfdsfdsfsdfds</p>
-                </div>
-
-                <div></div>
-
-                <div class="break"></div>
-
-                <div>
-                    <h2>sfsdfdsfsdfdsf</h2>
-                    <p>sdfsdfdsfdsfsdfds</p>
-                </div>
-
-                <div></div>
-            </section>
-        </div>
-
-        <footer></footer> -->
+        </nav>
     </body>
 </html>

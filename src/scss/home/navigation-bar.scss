@@ -1,0 +1,145 @@
+
+$navHeight: 80px;
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+nav.navigation-bar {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $navHeight;
+
+    & ul {
+        display: flex; 
+        position: absolute;
+        top: 0;
+        height: $navHeight;
+        line-height: $navHeight;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        & li {
+            display: block;
+            padding: 0 20px;
+
+            & a {
+                padding: 0;
+                text-decoration: none;
+                font-family: 'Montserrat';
+                font-size: 18px;
+                color: #2a475d;
+            }
+        }
+    }
+
+    & ul:first-child {
+        & li {
+            display: none;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, .4);
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            &:first-child {
+                border-bottom-left-radius: 0;
+            }
+
+            &:nth-child(1),
+            &:nth-child(4) {
+                display: block;
+            }
+
+            & .fa-solid {
+                color: white;
+                // text-shadow: 0 0 3px rgba(0, 0, 0, .2);
+                text-shadow: 0 0 3px rgb(173, 63, 69, .3);
+            }
+        }
+    }
+
+    & ul:last-child {
+        top: 0;
+        right: 0;
+
+        & li {
+            display: none;
+            width: $navHeight;
+            padding: 0;
+            text-align: center;
+
+            &:last-child {
+                display: block;
+            }
+
+            & .fa-brands {
+                color: #ad3f45;
+            }
+
+            &:hover {
+                &:last-child {
+                    background-color: rgba(255, 255, 255, .4);
+                    border-bottom-left-radius: 20px;
+                }
+                
+                & .fa-brands {
+                    color: white;
+                    text-shadow: 0 0 3px rgb(173, 63, 69, .3);
+                }
+            }
+
+            & span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (min-width:576px) { 
+    nav.navigation-bar  {
+        & ul:last-child {
+            & li {
+                display: block;
+
+                &:nth-child(1) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// Tablet Devices
+// Medium      ≥768px  = 720px
+
+@media (min-width:768px) { 
+    nav.navigation-bar  {
+        & ul:last-child {
+            & li:nth-child(1) {
+                display: block;
+            }
+        }
+    }
+}
+
+// Desktop Devices > 992px
+// Large       ≥992px  = 960px
+// X-Large     ≥1200px = 1140px
+// XX-Large    ≥1400px = 1320px
+
+@media (min-width:1044px) { 
+    nav.navigation-bar {
+        & ul:first-child {
+            & li:nth-child(2),
+            & li:nth-child(3) {
+                display: block;
+            }
+        }
+    }
+}

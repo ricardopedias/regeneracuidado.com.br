@@ -1,4 +1,5 @@
-// import './app.scss';
-import bar from './alert.js';
+import setupMobileButton from './js/mobile-button.js';
 
-bar();
+window.addEventListener("load", (event) => {
+    setupMobileButton()
+})

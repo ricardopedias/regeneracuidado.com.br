@@ -1,0 +1,109 @@
+
+$navHeight: 80px;
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+body.mobile-bar {
+    position: fixed;
+    width: 100%;
+
+    nav.mobile-bar {
+        display: block;
+    }
+}
+
+nav.mobile-bar {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100vh;
+    overflow-y: hidden;
+
+    & ul {
+        background-color: white;
+        width: 300px;
+        float: right;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
+        height: 100%;
+        overflow-y: auto;
+
+        & > li {
+            font-family: 'Montserrat';
+            font-size: 18px;
+            line-height: 80px;
+            padding-left: 30px;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, .05);
+            }
+
+            &.mobile-button {
+                width: $navHeight;
+                height: $navHeight;
+                // font-size: 34px;
+                padding-left: 0;
+                align-self: end;
+                text-align: center;
+                line-height: $navHeight;
+                border-bottom-left-radius: 20px;
+                cursor: pointer;
+                color: rgba(0, 0, 0, .2);
+            }
+
+            & a {
+                display: block;
+                text-decoration: none;
+                color: #2a475d;
+
+                & i {
+                    width: 40px;
+                    text-align: center;
+                }
+
+                & span.optional {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+// @media (min-width:576px) { 
+//     nav.mobile-bar {
+//         & ul {
+//             width: 50%;
+//        }
+//     }
+// }
+
+// Tablet Devices
+// Medium      ≥768px  = 720px
+
+// @media (min-width:768px) { 
+//     nav.mobile-bar {
+//         & ul {
+//             width: 300px;
+//        }
+//     }
+// }
+
+// // Desktop Devices > 992px
+// // Large       ≥992px  = 960px
+// // X-Large     ≥1200px = 1140px
+// // XX-Large    ≥1400px = 1320px
+
+// @media (min-width:1044px) { 
+//     nav.mobile-bar {
+//         & ul {
+//             width: 300px;
+//        }
+//     }
+// }

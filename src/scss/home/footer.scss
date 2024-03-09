@@ -26,10 +26,13 @@ footer.content {
             margin-top: -70px;
         }
 
+        & > div {
+            margin-top: 20px;
+        }
+
         & > div.column-one {
             grid-area: one;
-            background-color: red;
-            
+            // background-color: red;
             color: #2a475d;
             
             & h2 {
@@ -37,176 +40,202 @@ footer.content {
                 font-weight: 700;
                 padding-bottom: 20px;
             }
+
+            & p {
+                line-height: 30px;
+                font-size: 16px;
+                font-weight: 500;
+            }
         }
 
         & > div.column-two {
             grid-area: two;
-            background-color: green;
+            // background-color: green;
         }
 
         & > div.column-three {
             grid-area: three;
-            background-color: blue;
+            // background-color: blue;
+            padding-bottom: 20px;
         }
 
-        // & > div {
-        //     margin-top: 50px;
-        // }
+        & > div.column-two,
+        & > div.column-three {
+            & a {
+                display: block;
+                text-decoration: none;
+                line-height: 30px;
+                color: #2a475d;
+                padding: 0 10px;
+                max-width: 250px;
+                border-radius: 10px;
 
-        // & > div.footer-columns {
-        //     grid-area: content;
-        //     color: #2a475d;
-        
+                &:hover {
+                    background-color: rgba(0, 0, 0, .05);
+                }
+            }
+        }
+    }
+}
 
-        //     & div {
-        //         
+footer.bottom {
+    margin-top: 0 !important;
+    background-color: #2a475d;
+    height: $navHeight;
+    line-height: $navHeight;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: 300;
 
-        //         & > span {
-        //             display: block;
-        //             padding-bottom: 20px; 
-        //             line-height: 30px;
-        //         }
+    & > .wrap {
+        & > div.social {
+            display: none;
+            padding-left: 20px;
+    
+            & a {
+                padding-left: 20px;
+                color: white;
+                text-decoration: none;
+    
+                &:hover {
+                    color: #c5e2f0;
+                }
+    
+                & span {
+                    display: none;
+                }
+            }
+        }
+    
+        & > div.copy {
+            padding-right: 20px;
+            text-align: center;
+            margin-top: 0;
+    
+            & span {
+                display: none;
+            }
+        }
+    }
+}
 
-        //         & > a {
-        //             display: block;
-        //             text-decoration: none;
-        //             color: #2a475d;
-        //             line-height: 30px;
-        //             font-size: 18px;
-        //         }
-        //     }
-        // }
-
-        // & > div.column-two,
-        // & > div.column-three {
-        //     padding-top: 40px;
-
-        //     & a {
-        //         display: block;
-        //         text-decoration: none;
-        //         color: #2a475d;
-        //         padding-bottom: 20px; 
-        //     }
-        // }
+@media (min-width:520px) { 
+    footer.content {
+        & .wrap {
+            & > div {
+                display: grid;
+                grid-template-areas:
+                    'logo logo logo'
+                    'one one one'
+                    'two . three';
+                grid-template-columns: 45% auto 45%;
+            }
+        }
     }
 }
 
 // Tablet Devices
 // Medium      ≥768px  = 720px
 
-// @media (min-width:768px) { 
-//     footer.content {
-//         & .wrap {
-//             & > div {
-//                 display: grid;
-//                 grid-template-areas:
-//                     'logo logo logo'
-//                     'one two three';
-//                 grid-template-columns: 40% 30% 30%;
-//             }
-//         }
-//     }
-// }
+@media (min-width:768px) {
+    footer.content {
+        & > .wrap {
+            & > div {
+                display: grid;
+                grid-template-areas:
+                    'logo logo'
+                    'one two';
+                grid-template-columns: auto 35%;
+            }
 
-// footer.bottom {
-//     margin-top: 0 !important;
-//     background-color: #2a475d;
-//     height: $navHeight;
-//     line-height: $navHeight;
-//     color: white;
+            & div.column-two {
+                padding-bottom: 20px;
+            }
 
-//     & > .container > section {
-//         & > div.social {
-//             // display: flex;
-//             display: none;
-//             padding-left: 20px;
-    
-//             & a {
-//                 padding-left: 20px;
-//                 color: white;
-//                 text-decoration: none;
-    
-//                 &:hover {
-//                     color: #c5e2f0;
-//                 }
-    
-//                 & span {
-//                     display: none;
-//                 }
-//             }
-//         }
-    
-//         & > div.copy {
-//             padding-right: 20px;
-//             text-align: center;
-//             margin-top: 0;
-    
-//             & span {
-//                 display: none;
-//             }
-//         }
-//     }
-// }
+            & div.column-three {
+                display: none;
+            }
+        }
+    }
 
-// @media (min-width:600px) { 
-//     footer.bottom  > .container > section {
-//         & > div.social {
-//             display: none;
-//         }
-
-//         & > div.copy {
-//             text-align: center;
-
-//             span {
-//                 display: inline;
-//             }
-//         }
-//     }
-// }
-
-// @media (min-width:800px) {
-//     footer.content {
-//         & > .container > section {
-//             & > div {
-//                 display: grid;
-//                 grid-template-areas:
-//                     'logo logo logo'
-//                     'colone coltwo colthree';
-//                 grid-template-columns: 50% 25% 25%;
-//                 padding-bottom: 20px;
+    footer.bottom {
+        margin-top: 0 !important;
+        background-color: #2a475d;
+        height: $navHeight;
+        line-height: $navHeight;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 300;
     
-//                 & > div.column-one {
-//                     grid-area: colone;
-//                     color: #2a475d;
-//                     padding-left: 20px;
-    
-//                     & span {
-//                         display: block;
-//                         padding-bottom: 20px; 
-//                     }
-//                 }
-    
-//                 & > div.column-two,
-//                 & > div.column-three {
-//                     display: block;
-//                     padding-top: 40px;
-    
-//                     & a {
-//                         display: block;
-//                         text-decoration: none;
-//                         color: #2a475d;
-//                         padding-bottom: 20px; 
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
+        & > .wrap {
+            & > div.social {
+                display: block;
+                padding-left: 0;
+        
+                & a {
+                    padding-left: 20px;
+                    color: white;
+                    text-decoration: none;
+        
+                    &:hover {
+                        color: #c5e2f0;
+                    }
+        
+                    & span {
+                        display: none;
+                    }
+                }
+            }
+        
+            & > div.copy {
+                text-align: center;
+                margin-top: 0;
+                padding-right: 0;
+        
+                & span {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 
-// @media (min-width:1310px) { 
-//     footer.bottom  > .container > section {
-//         & > div.social {
-//             display: flex;
-//         }
-//     }
-// }
+@media (min-width:992px) { 
+    footer.content {
+        & .wrap {
+            & > div {
+                display: grid;
+                grid-template-areas:
+                    'logo logo logo'
+                    'one two three';
+                grid-template-columns: auto 25% 25%;
+            }
+
+            & div.column-three {
+                display: block;
+            }
+        }
+    }
+
+    footer.bottom .wrap {
+        & > div.social {
+            display: flex;
+        }
+
+        & > div.copy {
+            & span {
+                display: inline;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) { 
+    footer.content {
+        & .wrap {
+            & > div {
+                grid-template-columns: auto 30% 30%;
+            }
+        }
+    }
+}
