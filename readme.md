@@ -65,3 +65,5 @@ Para processar templates html
 
 "html-loader": "^5.0.0",
 Para incluir pedaçõs de templates
+
+https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages
