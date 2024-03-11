@@ -14,4 +14,5 @@ git commit -m "Deploy em $(date '+%d/%m/%Y %H:%M')"
 git branch -M main
 git remote add origin git@github.com:regeneracuidado/regeneracuidado.github.io.git
 git push origin main --force
+cd ..
 rm -Rf dep
