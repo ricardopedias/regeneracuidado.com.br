@@ -66,4 +66,8 @@ Para processar templates html
 "html-loader": "^5.0.0",
 Para incluir pedaçõs de templates
 
+https://lawrencewhiteside.com/courses/webpack-beyond-the-basics/hooking-up-html-preprocessors-like-ejs-pug-handlebars/
+
+https://stackoverflow.com/questions/39374187/how-can-i-provide-parameters-for-webpack-html-loader-interpolation
+
 https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages

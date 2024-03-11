@@ -11,13 +11,14 @@
     "watch-js": "nodemon -e js -x \"npm run dev\"",
     "watch-html": "nodemon -e html --ignore dist/ -x \"npm run dev\"",
     "watch": "npm run watch-scss & npm run watch-js & npm run watch-html",
-    "deploy": "npm run prod & echo 'fazer deploy'"
+    "deploy": "npm run prod & ./deploy.sh"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^6.5.1",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^6.10.0",
     "dart-sass": "^1.25.0",
     "html-loader": "^5.0.0",
