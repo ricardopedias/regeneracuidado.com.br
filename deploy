@@ -2,10 +2,8 @@
 
 echo "Fazendo deploy $(date '+%d/%m/%Y %H:%M')"
 
-rm -Rf dep
-mkdir dep
-cd dep
-cp -Rf ../dist/* .
+cd dist
+cp -Rf .git
 git init
 git add .
 git config user.name "Ricardo Pereira"
@@ -14,5 +12,5 @@ git commit -m "Deploy em $(date '+%d/%m/%Y %H:%M')"
 git branch -M main
 git remote add origin git@github.com:regeneracuidado/regeneracuidado.github.io.git
 git push origin main --force
-cd ..
-rm -Rf dep
+cd ../
+
