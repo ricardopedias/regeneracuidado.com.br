@@ -5,15 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width,initial-scale=1">
 
-        <meta name="description" content="xxxxx xxx">
-        <meta name="keywords" content="aaa, bbb">
+        {{> meta }}
 
-        <meta itemprop="name" content="Regenera Cuidado">
-        <meta itemprop="description" content="xxxxx xxx">
-        <meta itemprop="image" content="img/profile.png">
-
-        <title>{{ htmlWebpackPlugin.options.title }}</title>
-        <link rel="shortcut icon" href="img/apple-touch.png">
+        <title>{{ home.title }}</title>
+        <link rel="shortcut icon" href="{{ favicon }}">
     </head>
 
     <body>
@@ -28,7 +23,7 @@
 
                     <div>
                         <h3>Telefone</h3>
-                        <p>(12) 9 9798-5757</p>
+                        <p>{{ phone }}</p>
                     </div>
                 </div>
 
@@ -37,7 +32,7 @@
 
                     <div>
                         <h3>Localização</h3>
-                        <p>Jacareí, SP</p>
+                        <p>{{ city }}</p>
                     </div>
                 </div>
 

@@ -1,8 +1,8 @@
-const path = require('path');
-const CopyPlugin = require("copy-webpack-plugin");
+const path                 = require('path');
+const CopyPlugin           = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const variables = require('./src/variables.js');
+const HtmlWebpackPlugin    = require("html-webpack-plugin");
+const variableList         = require('./src/variables.js');
 
 module.exports = (env) => {
     let environment = env.production === true
@@ -79,16 +79,17 @@ module.exports = (env) => {
             new MiniCssExtractPlugin({
                 filename: '[name].css',
             }),
-            new HtmlWebpackPlugin(Object.assign({
-                title: "Regenera Cuidado",
+            new HtmlWebpackPlugin({
                 template: "src/page-home.hbs",
-                filename: 'index.html'
-            }, variables)),
-            new HtmlWebpackPlugin(Object.assign({
+                filename: 'index.html',
+                templateParameters: variableList
+            }),
+            new HtmlWebpackPlugin({
                 title: "Regenera Cuidado",
                 template: "src/page-faleconosco.hbs",
-                filename: 'faleconosco.html'
-            }, variables))
+                filename: 'faleconosco.html',
+                templateParameters: variableList
+            })
         ],
     }
 };

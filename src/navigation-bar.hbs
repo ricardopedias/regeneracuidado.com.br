@@ -1,55 +1,24 @@
 <nav class="navigation-bar">
     <ul>
-        <li>
-            <a href="index.html">
-                <i class="fa-solid fa-house fa-xl"></i>
-                <span>Home</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="nossa-historia.html">
-                <i class="fa-solid fa-dove fa-xl"></i>
-                <span>Nossa História</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="nosso-trabalho.html">
-                <i class="fa-solid fa-heart-pulse fa-xl"></i>
-                <span>Nosso Trabalho</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="faleconosco.html">
-                <i class="fa-solid fa-microphone-lines fa-xl"></i>
-                <span>Fale Conosco</span>
-            </a>
-        </li>
+        {{#each headerLinks}}
+            <li>
+                <a href="{{ this.url }}">
+                    <i class="fa-solid {{ this.icon }} fa-xl"></i>
+                    <span>{{ this.label }}</span>
+                </a>
+            </li>
+        {{/each}}
     </ul>
 
     <ul>
-        <li>
-            <a href="#">
-                <i class="fa-brands fa-facebook fa-xl"></i>
-                <span>Facebook</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="@regenera.cuidado">
-                <i class="fa-brands fa-instagram fa-xl"></i>
-                <span>Instagram</span>
-            </a>
-        </li>
-
-        <li>
-            <a href="">
-                <i class="fa-brands fa-youtube fa-xl"></i>
-                <span>Youtube</span>
-            </a>
-        </li>
+        {{#each socialLinks}}
+            <li>
+                <a href="{{ this.url }}">
+                    <i class="fa-brands {{ this.icon }} fa-xl"></i>
+                    <span>{{ this.label }}</span>
+                </a>
+            </li>
+        {{/each}}
 
         <li class="mobile-button">
             <a href="javascript:void()">
