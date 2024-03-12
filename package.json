@@ -10,8 +10,7 @@
     "watch-scss": "nodemon -e scss -x \"npm run dev\"",
     "watch-js": "nodemon -e js -x \"npm run dev\"",
     "watch-html": "nodemon -e html --ignore dist/ -x \"npm run dev\"",
-    "watch": "npm run watch-scss & npm run watch-js & npm run watch-html",
-    "deploy": "npm run prod & ./deploy"
+    "watch": "npm run watch-scss & npm run watch-js & npm run watch-html"
   },
   "keywords": [],
   "author": "",
