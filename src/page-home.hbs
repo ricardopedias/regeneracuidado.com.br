@@ -12,14 +12,14 @@
         <meta itemprop="description" content="xxxxx xxx">
         <meta itemprop="image" content="img/profile.png">
 
-        <title><%= htmlWebpackPlugin.options.title %></title>
+        <title>{{ htmlWebpackPlugin.options.title }}</title>
         <link rel="shortcut icon" href="img/apple-touch.png">
     </head>
 
     <body>
-        <%= require('html-loader!./header-home.html').default %>
+        {{> header-home }}
 
-        <%= require('html-loader!./navigation-bar.html').default %>
+        {{> navigation-bar }}
 
         <div class="holder action-bar">
             <section class="wrap box-quad-static">
@@ -111,8 +111,8 @@
             </section>
         </div>
 
-        <%= require('html-loader!./footer.html').default %>
-
-        <%= require('html-loader!./mobile-menu.html').default %>
+        {{> footer }}
+        
+        {{> mobile-menu }}
     </body>
 </html>

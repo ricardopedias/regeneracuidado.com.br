@@ -2,6 +2,7 @@ const path = require('path');
 const CopyPlugin = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const variables = require('./src/variables.js');
 
 module.exports = (env) => {
     let environment = env.production === true
@@ -22,31 +23,17 @@ module.exports = (env) => {
         },
         module: {
             rules: [
-                // {
-                //     test: /\.html$/,
-                //     loader: ['html-loader'],
-                //     //options: {
-                //         // preprocessor: (content, loaderContext) => {
-                //         //     // console.log(content, loaderContext)
-
-                //         //     return content
-                //         // //     let result;
-                
-                //         // //     try {
-                //         // //       result = Handlebars.compile(content)({
-                //         // //         firstname: "Value",
-                //         // //         lastname: "OtherValue",
-                //         // //       });
-                //         // //     } catch (error) {
-                //         // //       loaderContext.emitError(error);
-                
-                //         // //       return content;
-                //         // //     }
-                
-                //         // //     return result;
-                //         // },
-                //     //}
-                // },
+                {
+                    test: /\.hbs$/,
+                    use: [ 
+                        { 
+                            loader: 'handlebars-loader', 
+                            //options: { inlineRequires: 'img\/' } 
+                        },
+                        // { loader: 'html-loader' },
+                        // { loader: 'extract-loader' },
+                    ],
+                },
                 {
                     test: /\.scss$/,
                     use: [
@@ -57,7 +44,7 @@ module.exports = (env) => {
                             options: {
                               implementation: require("dart-sass")
                             },
-                          },
+                        },
                     ],
                 },
                 {
@@ -85,22 +72,23 @@ module.exports = (env) => {
         plugins: [
             new CopyPlugin({
                 patterns: [
-                    'src/CNAME'
+                    'src/CNAME',
+                    { from: 'src/img/*.png', to: "/application/dist/img/[name][ext]" },
                 ],
             }),
             new MiniCssExtractPlugin({
                 filename: '[name].css',
             }),
-            new HtmlWebpackPlugin({
+            new HtmlWebpackPlugin(Object.assign({
                 title: "Regenera Cuidado",
-                template: "src/page-home.html",
+                template: "src/page-home.hbs",
                 filename: 'index.html'
-            }),
-            new HtmlWebpackPlugin({
+            }, variables)),
+            new HtmlWebpackPlugin(Object.assign({
                 title: "Regenera Cuidado",
-                template: "src/page-faleconosco.html",
+                template: "src/page-faleconosco.hbs",
                 filename: 'faleconosco.html'
-            }),
+            }, variables))
         ],
     }
 };

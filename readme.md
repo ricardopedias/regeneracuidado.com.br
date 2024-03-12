@@ -48,9 +48,14 @@ O tempo para que as alterações de DNS sejam visíveis para toda a internet é 
 
 As alterações feitas no branch gh-pages do GitHub podem demorar até 10 minutos para que tenham efeito, segundo o próprio GitHub.
 
+template engine 
+https://handlebarsjs.com/guide/#evaluation-context
+
 ## Mais informações e referências
 
 Acesse a página de ajuda do [GitHubPages](https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages) para mais informações sobre a criação de sites diferenciados para seu projeto, com templates, páginas de erro, redirecionamento, entre outras coisas.
+
+https://github.com/pcardune/handlebars-loader/issues/37
 
 https://docs.github.com/pt/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site
 

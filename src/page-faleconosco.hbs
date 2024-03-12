@@ -12,19 +12,15 @@
         <meta itemprop="description" content="xxxxx xxx">
         <!-- <meta itemprop="image" content="aaa, bbb"> -->
 
-        <title>Nossa História | <%= htmlWebpackPlugin.options.title %></title>
+        <title>Nossa História | {{ htmlWebpackPlugin.options.title }}></title>
         <!-- <link rel="shortcut icon" href="./assets/icon.png"> -->
     </head>
 
     <body>
-        <%= require('html-loader!./header-home.html').default %>
-
-        <%= require('html-loader!./navigation-bar.html').default %>
 
         <h2 class="our-values">Nossos Valores</h2>
 
-        <%= require('html-loader!./footer.html').default %>
-
-        <%= require('html-loader!./mobile-menu.html').default %>
+        {{> footer }}
+        
     </body>
 </html>
