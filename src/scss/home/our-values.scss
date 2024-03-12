@@ -21,7 +21,7 @@ h2.our-values {
             color: #274760;
             border: 1px solid #ccc;
             transition: margin-top .5s;
-            height: 200px;
+            height: 210px;
 
             & h2 {
                 margin-top: 0;
@@ -78,6 +78,16 @@ h2.our-values {
     }
 }
 
+@media (min-width:576px) { 
+    .holder.our-values {
+        & section {
+            & > div {
+                height: 200px;
+            }
+        }
+    }
+}
+
 @media (min-width:1200px) { 
     h2.our-values {
         padding-bottom: 100px;
@@ -87,6 +97,10 @@ h2.our-values {
         font-family: 'Montserrat';
     
         & section {
+            & > div {
+                height: 200px;
+            }
+
             & > div:nth-child(2) {
                 color: #ad3f45;
                 border: 1px solid #ad3f45;

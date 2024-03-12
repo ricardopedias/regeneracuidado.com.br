@@ -27,13 +27,15 @@ footer.content {
         }
 
         & > div {
-            margin-top: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
         }
 
         & > div.column-one {
             grid-area: one;
-            // background-color: red;
             color: #2a475d;
+            text-align: center;
+            margin-bottom: 0;
             
             & h2 {
                 font-size: 24px;
@@ -45,17 +47,32 @@ footer.content {
                 line-height: 30px;
                 font-size: 16px;
                 font-weight: 500;
+                padding-bottom: 10px;
+
+                &.email {
+                    font-size: 14px;
+                }
+
+                & i {
+                    display: inline-block;
+                    width: 20px;
+                }
+
+                & span.new-line {
+                    display: block;
+                    padding-left: 25px;
+                }
             }
         }
 
         & > div.column-two {
             grid-area: two;
-            // background-color: green;
+            margin-bottom: 0;
         }
 
         & > div.column-three {
             grid-area: three;
-            // background-color: blue;
+            margin-top: 0;
             padding-bottom: 20px;
         }
 
@@ -64,11 +81,14 @@ footer.content {
             & a {
                 display: block;
                 text-decoration: none;
-                line-height: 30px;
+                line-height: 50px;
                 color: #2a475d;
                 padding: 0 10px;
-                max-width: 250px;
+                // max-width: 250px;
                 border-radius: 10px;
+                text-align: center;
+                max-width: auto;
+                font-size: 18px;
 
                 &:hover {
                     background-color: rgba(0, 0, 0, .05);
@@ -91,6 +111,7 @@ footer.bottom {
         & > div.social {
             display: none;
             padding-left: 20px;
+            min-height: $navHeight;
     
             & a {
                 padding-left: 20px;
@@ -111,6 +132,7 @@ footer.bottom {
             padding-right: 20px;
             text-align: center;
             margin-top: 0;
+            min-height: $navHeight;
     
             & span {
                 display: none;
@@ -129,6 +151,35 @@ footer.bottom {
                     'one one one'
                     'two . three';
                 grid-template-columns: 45% auto 45%;
+
+                & div.column-one {
+                    text-align: left;
+                    padding-bottom: 0;
+
+                    & p {
+                        &.email {
+                            font-size: 16px;
+                        }
+    
+                        & > span.new-line {
+                            display: inline-block;
+                            padding-left: 0;
+                        }
+                    }
+                }
+
+                & > div.column-two,
+                & > div.column-three {
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                    padding-bottom: 0;
+
+                    & a {
+                        line-height: 30px;
+                        text-align: left;
+                        font-size: 16px;
+                    }
+                }
             }
         }
     }
