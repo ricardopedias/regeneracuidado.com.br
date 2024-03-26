@@ -80,14 +80,14 @@ module.exports = (env) => {
                 filename: '[name].css',
             }),
             new HtmlWebpackPlugin({
-                template: "src/page-home.hbs",
+                template: "src/page-homecare.hbs",
                 filename: 'index.html',
                 templateParameters: variableList
             }),
             new HtmlWebpackPlugin({
                 title: "Regenera Cuidado",
-                template: "src/page-faleconosco.hbs",
-                filename: 'faleconosco.html',
+                template: "src/page-consultancy.hbs",
+                filename: 'consultancy.html',
                 templateParameters: variableList
             })
         ],

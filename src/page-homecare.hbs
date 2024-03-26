@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+
+        {{> meta }}
+
+        <title>{{ home.title }}</title>
+        <link rel="shortcut icon" href="{{ favicon }}">
+    </head>
+
+    <body class="homecare">
+        {{> homecare-header }}
+
+        {{> navigation-bar }}
+
+        <div class="holder action-bar">
+            <section class="wrap box-quad-static">
+                <div class="to-contact">
+                    <i class="fa-solid fa-phone"></i>
+
+                    <div>
+                        <h3>Telefone</h3>
+                        <p>{{ phone }}</p>
+                    </div>
+                </div>
+
+                <div class="to-contact">
+                    <i class="fa-solid fa-map-location-dot"></i>
+
+                    <div>
+                        <h3>Localização</h3>
+                        <p>{{ city }}</p>
+                    </div>
+                </div>
+
+                <div class="to-contact">
+                    <i class="fa-solid fa-envelope-open-text"></i>
+
+                    <div>
+                        <h3>Fale Conosco</h3>
+                        <p>Entre em contato</p>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="button">
+                        Baixar e-book
+
+                        <i class="fa-solid fa-arrow-right fa-xl"></i>
+                    </button>
+                </div>
+            </section>
+        </div>
+
+        <h2 class="departments">Nosso Trabalho</h2>
+
+        <div class="holder departments">
+            <section class="wrap box-triple-static">
+                <div>
+                    <img src="img/department-homecare.png">
+                </div>
+
+                <div>
+                    <img src="img/department-wounds.png">
+                </div>
+
+                <div>
+                    <img src="img/department-consultancy.png">
+                </div>
+            </section>
+        </div>
+
+        {{> footer }}
+        
+        {{> mobile-menu }}
+    </body>
+</html>

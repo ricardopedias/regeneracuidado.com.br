@@ -37,10 +37,13 @@ body {
 
 @import 'scss/components/components.scss';
 
+@import 'scss/homecare/header.scss';
+@import 'scss/homecare/action-bar.scss';
+@import 'scss/homecare/departments.scss';
 
-@import 'scss/home/header.scss';
-@import 'scss/home/action-bar.scss';
-@import 'scss/home/our-values.scss';
+// @import 'scss/consultancy/header.scss';
+// @import 'scss/consultancy/action-bar.scss';
+// @import 'scss/consultancy/our-values.scss';
 
 @import 'scss/navigation-bar.scss';
 @import 'scss/footer.scss';
