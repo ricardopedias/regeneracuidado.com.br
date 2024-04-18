@@ -41,10 +41,38 @@ module.exports = {
         { icon: 'fa-instagram', label: 'Instagram', url: '@regenera.cuidado' },
         { icon: 'fa-youtube', label: 'Youtube', url: '#' },
     ],
-    home: {
-        description: 'descricao',
-        keywords: 'aaa, bbb',
+    pageIndex: {
+        description: 'index index index index',
+        keywords: 'aaa, bbb, ccc',
         title: 'Regenera Cuidado',
-        image: 'img/profile.png'
+        thumbnail: 'img/profile.png'
+    },
+    pageConsultancy: {
+        link: 'treinamento-consultoria.html',
+        description: 'consul consul consul consul',
+        keywords: 'jjj, kkk, lll',
+        title: 'Treinamento e Consultoria',
+        thumbnail: 'img/profile.png'
+    },
+    pageHomeCare: {
+        link: 'assistencia-domiciliar.html',
+        description: 'care care care care',
+        keywords: 'ddd, eee, fff',
+        title: 'Assistência Domiciliar',
+        thumbnail: 'img/profile.png'
+    },
+    pageOurStory: {
+        link: 'nossa-historia.html',
+        description: 'story story story story',
+        keywords: 'mmm, nnn, ooo',
+        title: 'Nossa História',
+        thumbnail: 'img/profile.png'
+    },
+    pageWounds: {
+        link: 'tratamento-feridas.html',
+        description: 'wounds wounds wounds wounds',
+        keywords: 'ggg, hhh, iii',
+        title: 'Tratamento de Feridas',
+        thumbnail: 'img/profile.png'
     }
 }

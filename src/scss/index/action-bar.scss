@@ -30,12 +30,18 @@ body.homecare .action-bar {
                 font-size: 56px;
             }
 
-            & > div {
+            & > a {
+                display: block;
                 padding-left: 10px;
+                text-decoration: none;
 
-                & h3 {
+                & b {
                     font-size: 14px;
                     font-weight: bold;
+                }
+
+                &:visited  b{
+                    color: #274760;
                 }
     
                 & p {

@@ -1,5 +1,4 @@
 
-
 body.homecare h2.departments {
     font-size: 36px;
     color: #274760;
@@ -12,10 +11,16 @@ body.homecare h2.departments {
 body.homecare .holder.departments {
     & section {
         & > div {
+            display: block;
             height: 340px;
+            cursor: pointer;
 
             & img {
-                margin-left: -20px;
+                margin-left: -24px;
+            }
+
+            &:hover {
+                opacity: 0.8;
             }
         }
     }

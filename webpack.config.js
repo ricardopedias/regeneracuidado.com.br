@@ -80,16 +80,30 @@ module.exports = (env) => {
                 filename: '[name].css',
             }),
             new HtmlWebpackPlugin({
-                template: "src/page-homecare.hbs",
+                template: "src/view/index/page.hbs",
                 filename: 'index.html',
-                templateParameters: variableList
-            }),
-            new HtmlWebpackPlugin({
-                title: "Regenera Cuidado",
-                template: "src/page-consultancy.hbs",
-                filename: 'consultancy.html',
-                templateParameters: variableList
+                templateParameters: Object.assign({}, variableList, variableList.pageIndex)
             })
+            // new HtmlWebpackPlugin({
+            //     template: "src/view/consultancy/page.hbs",
+            //     filename: 'treinamento-consultoria.html',
+            //     templateParameters: Object.assign({}, variableList, variableList.pageConsultancy)
+            // }),
+            // new HtmlWebpackPlugin({
+            //     template: "src/view/homecare/page.hbs",
+            //     filename: 'assistencia-domiciliar.html',
+            //     templateParameters: Object.assign({}, variableList, variableList.pageHomeCare)
+            // }),
+            // new HtmlWebpackPlugin({
+            //     template: "src/view/our-story/page.hbs",
+            //     filename: 'nossa-historia.html',
+            //     templateParameters: Object.assign({}, variableList, variableList.pageOurStory)
+            // }),
+            // new HtmlWebpackPlugin({
+            //     template: "src/view/wounds/page.hbs",
+            //     filename: 'tratamento-feridas.html',
+            //     templateParameters: Object.assign({}, variableList, variableList.pageWounds)
+            // })
         ],
     }
 };
