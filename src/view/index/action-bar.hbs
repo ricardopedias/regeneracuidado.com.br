@@ -3,7 +3,7 @@
         <div class="to-contact">
             <i class="fa-solid fa-phone"></i>
 
-            <a href="#">
+            <a href="{{ pageContact.link }}">
                 <b>Telefone</b>
                 <p>{{ phone }}</p>
             </a>
@@ -12,7 +12,7 @@
         <div class="to-contact">
             <i class="fa-solid fa-map-location-dot"></i>
 
-            <a href="#">
+            <a href="{{ pageContact.link }}">
                 <b>Localização</b>
                 <p>{{ city }}</p>
             </a>
@@ -21,14 +21,14 @@
         <div class="to-contact">
             <i class="fa-solid fa-envelope-open-text"></i>
 
-            <a href="#">
+            <a href="{{ pageContact.link }}">
                 <b>Fale Conosco</b>
                 <p>Entre em contato</p>
             </a>
         </div>
 
         <div>
-            <button type="button">
+            <button type="button" data-link="{{ downloadEbook }}">
                 Baixar e-book
 
                 <i class="fa-solid fa-arrow-right fa-xl"></i>

@@ -1,5 +1,5 @@
 
-body.homecare .action-bar {
+body.index .action-bar {
     margin-top: -80px;
 
     & .wrap {
@@ -73,7 +73,7 @@ body.homecare .action-bar {
 }
 
 @media (min-width:576px) { 
-    body.homecare .action-bar .wrap {
+    body.index .action-bar .wrap {
         transition: width .5s;
         border-radius: 25px;
 

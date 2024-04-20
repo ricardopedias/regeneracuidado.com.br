@@ -1,0 +1,125 @@
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+body > div.contact-bar {
+    height: 150px;
+    background-color: #ececec;
+    // background-color: red;
+
+    & .wrap {
+        position: relative;
+        padding-top: $box-gap;
+        padding-bottom: $box-gap;
+
+        & > div {
+            // display: grid;
+            display: none;
+            grid-template-areas:
+                'icon content';
+            grid-template-columns: 60px auto;
+            color: #274760;
+            align-items: center;
+            width: 260px;
+            font-family: 'Montserrat';
+            padding-left: 10px;
+
+            &.to-contact:hover {
+                opacity: .8;
+            }
+
+            & > i {
+                grid-area: icon;
+                font-size: 56px;
+            }
+
+            & > a {
+                display: block;
+                padding-left: 10px;
+                text-decoration: none;
+
+                & i {
+                    color: #274760;
+                }
+
+                & b {
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+
+                &:visited  b {
+                    color: #274760;
+                }
+    
+                & p {
+                    font-size: 18px;
+                    color: #c2c2c2;
+                    padding-top: 10px;
+                }
+            }
+
+            &.to-social a:hover {
+                opacity: .8;
+            }
+        }
+
+        & > div:nth-child(1) {
+            display: grid;
+        }
+    }
+}
+
+// @media (min-width:576px) { 
+//     body > div.contact-bar {
+//         transition: width .5s;
+
+//         & .wrap {
+//             & > div:nth-child(2) {
+//                 display: grid;
+//             }
+//         }
+//     }
+// }
+
+// // Tablet Devices
+// // Medium      ≥768px  = 720px
+
+@media (min-width:768px) { 
+    body > div.contact-bar {
+        & .wrap {
+            & > div:nth-child(2) {
+                display: grid;
+
+                & > a {
+                    & p {
+                        font-size: 14px;
+                        display: inline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    body > div.contact-bar {
+        & .wrap {
+            & > div:nth-child(2) {
+                & > a {
+                    & p {
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            & > div:nth-child(3) {
+                display: flex;
+                justify-content: flex-end;
+                font-size: 28px;
+                gap: 10px;
+            }
+        }
+    }
+}
+  

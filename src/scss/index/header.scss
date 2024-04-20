@@ -3,7 +3,7 @@
 // Extra small <576px  = 100%
 // Small       ≥576px  = 540px
 
-body.homecare > header {
+body.index > header {
     background-image: url('img/header.svg');
     background-color: #f3edeb;
     background-position: center;
@@ -67,7 +67,7 @@ body.homecare > header {
 }
 
 @media (min-width:576px) { 
-    body.homecare > header {
+    body.index > header {
         padding-top: 0;
 
         & .wrap {
@@ -75,7 +75,7 @@ body.homecare > header {
 
             & h1,
             & h2 {
-                width: 50%;
+            width: 50%;
                 text-align: left;
                 padding: 5px 40px;
                 padding-left: 10px;
@@ -97,7 +97,7 @@ body.homecare > header {
 // Medium      ≥768px  = 720px
 
 @media (min-width:768px) { 
-    body.homecare > header {
+    body.index > header {
         height: 650px;
 
         & .wrap {
@@ -117,7 +117,7 @@ body.homecare > header {
 }
 
 @media (min-width:1200px) { 
-    body.homecare > header {
+    body.index > header {
         height: 800px;
 
         & .wrap {

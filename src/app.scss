@@ -1,4 +1,5 @@
 $text-primary: #ad3f45;
+$text-secondary: #274760;
 
 @font-face {
     font-family: 'Montserrat';
@@ -41,7 +42,9 @@ body {
 @import 'scss/index/action-bar.scss';
 @import 'scss/index/departments.scss';
 
-
+@import 'scss/common/header-page.scss';
+@import 'scss/common/contact-bar.scss';
 @import 'scss/common/navigation-bar.scss';
 @import 'scss/common/footer.scss';
 @import 'scss/common/mobile-menu.scss';
+@import 'scss/common/article.scss';

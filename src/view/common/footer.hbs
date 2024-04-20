@@ -4,7 +4,7 @@
             <img src="img/logo-footer.png">
 
             <div class="column-one">
-                <h2>Regenera Cuidado {{ htmlWebpackPlugin.options.title }}</h2>
+                <h2>{{ siteName }}</h2>
 
                 <p class="address">
                     <i class="fa-solid fa-car-side"></i>
@@ -48,7 +48,7 @@
             <span>Siga-nos</span>
 
             {{#each socialLinks}}
-                <a href="{{ this.url }}">
+                <a href="{{ this.url }}" target="_blank">
                     <i class="fa-brands {{ this.icon }} fa-xl"></i>
                     <span>{{ this.label }}</span>
                 </a>

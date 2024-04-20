@@ -1,5 +1,5 @@
 
-body.homecare h2.departments {
+body.index h2.departments {
     font-size: 36px;
     color: #274760;
     text-align: center;
@@ -8,7 +8,7 @@ body.homecare h2.departments {
     padding: 40px 20px;
 }
 
-body.homecare .holder.departments {
+body.index .holder.departments {
     & section {
         & > div {
             display: block;
@@ -27,7 +27,7 @@ body.homecare .holder.departments {
 }
 
 @media (min-width:576px) { 
-    body.homecare .holder.departments {
+    body.index .holder.departments {
         & section {
             & > div {
                 & > img {
@@ -39,12 +39,12 @@ body.homecare .holder.departments {
 }
 
 @media (min-width:1200px) { 
-    body.homecare h2.departments {
+    body.index h2.departments {
         font-size: 50px;
         padding-bottom: 100px;
     }
 
-    body.homecare .holder.departments {
+    body.index .holder.departments {
         & section {
             & > div:nth-child(2) {
                 color: #ad3f45;

@@ -1,3 +1,4 @@
+
 const path                 = require('path');
 const CopyPlugin           = require("copy-webpack-plugin");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -83,27 +84,47 @@ module.exports = (env) => {
                 template: "src/view/index/page.hbs",
                 filename: 'index.html',
                 templateParameters: Object.assign({}, variableList, variableList.pageIndex)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/conditions/page.hbs",
+                filename: variableList.pageConditions.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageConditions)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/consultancy/page.hbs",
+                filename: variableList.pageConsultancy.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageConsultancy)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/contact/page.hbs",
+                filename: variableList.pageContact.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageContact)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/homecare/page.hbs",
+                filename: variableList.pageHomeCare.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageHomeCare)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/our-story/page.hbs",
+                filename: variableList.pageOurStory.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageOurStory)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/privacy/page.hbs",
+                filename: variableList.pagePrivacy.link,
+                templateParameters: Object.assign({}, variableList, variableList.pagePrivacy)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/testimonials/page.hbs",
+                filename: variableList.pageTestimonials.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageTestimonials)
+            }),
+            new HtmlWebpackPlugin({
+                template: "src/view/wounds/page.hbs",
+                filename: variableList.pageWounds.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageWounds)
             })
-            // new HtmlWebpackPlugin({
-            //     template: "src/view/consultancy/page.hbs",
-            //     filename: 'treinamento-consultoria.html',
-            //     templateParameters: Object.assign({}, variableList, variableList.pageConsultancy)
-            // }),
-            // new HtmlWebpackPlugin({
-            //     template: "src/view/homecare/page.hbs",
-            //     filename: 'assistencia-domiciliar.html',
-            //     templateParameters: Object.assign({}, variableList, variableList.pageHomeCare)
-            // }),
-            // new HtmlWebpackPlugin({
-            //     template: "src/view/our-story/page.hbs",
-            //     filename: 'nossa-historia.html',
-            //     templateParameters: Object.assign({}, variableList, variableList.pageOurStory)
-            // }),
-            // new HtmlWebpackPlugin({
-            //     template: "src/view/wounds/page.hbs",
-            //     filename: 'tratamento-feridas.html',
-            //     templateParameters: Object.assign({}, variableList, variableList.pageWounds)
-            // })
         ],
     }
 };

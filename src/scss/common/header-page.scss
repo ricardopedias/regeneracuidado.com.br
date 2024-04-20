@@ -1,0 +1,133 @@
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+$headerHeight: 550px;
+$headerSmallHeight: 500px;
+$headerMaskHeight: 180px;
+
+body > header.page {
+    height: $headerSmallHeight;
+    text-align: center;
+    position: relative;
+
+    & > div.mask {
+        position: absolute;
+        top: 0;
+        background-image: url('img/header-page.svg');
+        background-position: top center ;
+        background-repeat: no-repeat;
+        height: $headerMaskHeight;
+        width: 100%;
+
+        & img {
+            display: inline-block;
+            width: 400px;
+            height: 230px;
+            margin-top: 50px; 
+            transform: scale(.8);
+        }
+    }
+
+    & > div.background {
+        display: none; // oculto em telas pequenas
+    }   
+
+    & > div.content {
+        position: absolute;
+        top: 0;
+        height: $headerSmallHeight;
+        width: 100%;
+
+        & h1,
+        & h2 {
+            font-family: 'Montserrat';
+            color: $text-primary;
+            padding: 0 30px;
+        }
+
+        & h1 {
+            font-size: 28px;
+            margin-top: $headerMaskHeight + 100px; 
+            font-weight: 700;
+        }
+
+        & h2 {
+            font-size: 16px;
+            margin-top: 30px;
+            font-weight: 300;
+            line-height: 20px;
+        }
+    }
+}
+
+@media (min-width:576px) { 
+    body > header.page {
+        & > div.content {
+            & h1 {
+                font-size: 32px;
+                margin-top: $headerMaskHeight + 120px; 
+            }
+        }
+    }
+}
+
+// // Tablet Devices
+// // Medium      ≥768px  = 720px
+
+@media (min-width:768px) { 
+    body > header.page {
+        text-align: left;
+    
+        & > div.mask {
+            & img {
+                margin-top: 60px; 
+            }
+        }
+
+        & > div.content {
+            & h1,
+            & h2 {
+                padding-right: 20%;
+            }
+        }
+    }   
+}
+
+@media (min-width:1200px) { 
+    body > header.page {
+        height: $headerHeight;
+    
+        & > div.background {
+            height: $headerHeight;
+            display: block;
+
+            & section.wrap {
+                text-align: right;
+
+                & img {
+                    width: auto;
+                    height: $headerHeight;
+                }
+            }
+        }   
+
+        & > div.content {
+            height: $headerHeight;
+
+            & h1,
+            & h2 {
+                padding-right: 50%;
+            }
+
+            & h1 {
+                margin-top: $headerMaskHeight + 150px;
+            }
+    
+            & h2 {
+                margin-top: 30px;
+            }
+        }
+    }
+}

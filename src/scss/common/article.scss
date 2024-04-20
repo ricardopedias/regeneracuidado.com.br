@@ -1,0 +1,87 @@
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+body article {
+    & h1,
+    & h2,
+    & p {
+        font-family: 'Montserrat';
+        padding: 0 30px;
+    }
+
+    & h1 {
+        font-size: 32px;
+        font-weight: 700;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        color: $text-secondary;
+    }
+
+    & h2 {
+        font-size: 28px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        color: $text-primary;
+    }
+
+    & p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 22px;
+        color: #c2c2c2;
+        text-align: justify;
+    }
+
+    & picture {
+        display: block;
+        text-align: center;
+        margin: 30px;
+
+        & img {
+            display: inline-block;
+            width: 320px;
+            height: auto;
+        }
+    }
+}
+
+// Tablet Devices
+// Medium      ≥768px  = 720px
+
+@media (min-width:768px) { 
+    body article {
+        & picture.right {
+            margin-top: 0;
+            float: right;
+        }
+
+        & picture.left {
+            margin-top: 0;
+            float: left;
+        }
+    }
+}
+
+@media (min-width:992px) { 
+    body article {
+        & picture {
+            & img {
+                width: 400px;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) { 
+    body article {
+        & picture {
+            & img {
+                width: 500px;
+                height: auto;
+            }
+        }
+    }
+}

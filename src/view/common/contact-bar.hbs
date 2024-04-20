@@ -1,0 +1,29 @@
+<div class="holder contact-bar">
+    <section class="wrap box-triple-static">
+        <div class="to-contact">
+            <i class="fa-solid fa-phone"></i>
+
+            <a href="{{ pageContact.link }}">
+                <b>Telefone/WhatsApp</b>
+                <p>{{ phone }}</p>
+            </a>
+        </div>
+
+        <div class="to-contact">
+            <i class="fa-solid fa-envelope-open-text"></i>
+
+            <a href="{{ pageContact.link }}">
+                <b>Email</b>
+                <p>{{ email }}</p>
+            </a>
+        </div>
+
+        <div class="to-social">
+            {{#each socialLinks}}
+                <a href="{{ this.url }}" target="_blank">
+                    <i class="fa-brands {{ this.icon }} fa-xl"></i>
+                </a>
+            {{/each}}
+        </div>
+    </section>
+</div>
