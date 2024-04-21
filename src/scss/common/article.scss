@@ -6,9 +6,18 @@
 body article {
     & h1,
     & h2,
-    & p {
+    & h3,
+    & h4,
+    & p,
+    & li {
         font-family: 'Montserrat';
         padding: 0 30px;
+
+        & small {
+            opacity: 0.5;
+            font-size: 18px;
+            font-style: italic;
+        }
     }
 
     & h1 {
@@ -16,23 +25,74 @@ body article {
         font-weight: 700;
         padding-top: 50px;
         padding-bottom: 30px;
-        color: $text-secondary;
+        color: $text-primary;
     }
 
     & h2 {
+        font-size: 32px;
+        font-weight: 700;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        color: $text-secondary;
+    }
+
+    & h3 {
         font-size: 28px;
         padding-top: 30px;
         padding-bottom: 30px;
         color: $text-primary;
     }
 
-    & p {
+    & p,
+    & li {
         font-size: 18px;
         font-weight: 300;
-        line-height: 22px;
-        color: #c2c2c2;
+        line-height: 24px;
+        color: #999;
         text-align: justify;
+
+        & + p,
+        & + ul,
+        & + ol {
+            margin-top: 20px;
+        }
+
+        & strong {
+            color: $text-primary;
+        }
+
+        & a,
+        & a:visited {
+            color: $text-secondary;
+            font-style: italic;
+            text-decoration: none;
+
+            &:hover {
+                color: $text-primary;
+                text-decoration: underline;
+            }
+        }
     }
+
+    & ol,
+    & ul {
+        padding-left: 30px;
+        list-style: none;
+
+        & li + li {
+            margin-top: 10px;
+        }
+    }
+
+    & ol {
+        list-style-type: decimal;
+    }
+
+    & ul li::before {
+        content: "⦁";
+        margin-right: 10px;
+    }
+
 
     & picture {
         display: block;

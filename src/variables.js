@@ -7,7 +7,7 @@ let linkPageConditions   = 'termos-e-condicoes.html';
 let linkPageConsultancy  = 'treinamento-consultoria.html';
 let linkPageContact      = 'fale-conosco.html';
 let linkPageHomeCare     = 'assistencia-domiciliar.html';
-let linkPageOurStory     = 'nossa-historia.html';
+let linkPageAboutUs     = 'sobre-nos.html';
 let linkPagePrivacy      = 'privacidade.html';
 let linkPageTestimonials = 'depoimentos.html';
 let linkPageWounds       = 'tratamento-feridas.html';
@@ -21,28 +21,28 @@ module.exports = {
     currentYear  : new Date().getFullYear(),
     siteName     : siteName,
     phone        : '(12) 9 9798-5757',
-    address      : 'Rua das acácias, 258',
-    cep          : '12.380-000',
+    address      : 'Rua Dr. Popílio Mercadante, 398 - Sala 403',
+    cep          : '12.308-510',
     city         : 'Jacareí, SP',
-    email        : 'contato@regeneracuidado.com.br',
+    email        : 'comercial@regeneracuidado.com.br',
     downloadEbook : '#',
     headerLinks : [
         { icon: 'fa-house', label: 'Home', url: linkPageIndex },
-        { icon: 'fa-dove', label: 'Nossa História', url: linkPageOurStory },
+        { icon: 'fa-dove', label: 'Sobre Nós', url: linkPageAboutUs },
         { icon: 'fa-heart-pulse', label: 'Home Care', url: linkPageHomeCare },
-        { icon: 'fa-microphone-lines', label: 'Consultoria', url: linkPageConsultancy },
+        { icon: 'fa-face-smile-beam', label: 'Depoimentos', url: linkPageTestimonials },
     ],
     mobileLinks: [
         { icon: 'fa-house', label: 'Home', url: 'index.html' },
-        { icon: 'fa-dove', label: 'Nossa História', url: linkPageOurStory },
+        { icon: 'fa-dove', label: 'Sobre Nós', url: linkPageAboutUs },
         { icon: 'fa-heart-pulse', label: 'Home Care', url: linkPageHomeCare },
-        { icon: 'fa-face-smile-beam', label: 'Trat. de Feridas', url: linkPageWounds },
-        { icon: 'fa-microphone-lines', label: 'Consultoria', url: linkPageConsultancy },
+        { icon: 'fa-kit-medical', label: 'Trat. de Feridas', url: linkPageWounds },
+        { icon: 'fa-graduation-cap', label: 'Consultoria', url: linkPageConsultancy },
         { icon: 'fa-face-smile-beam', label: 'Depoimentos', url: linkPageTestimonials },
         { icon: 'fa-envelope', label: 'Fale Consosco', url: linkPageContact },
     ],
     footerLinksOne: [
-        { label: 'Sobre Nós', url: linkPageOurStory },
+        { label: 'Sobre Nós', url: linkPageAboutUs },
         { label: 'Home Care', url: linkPageHomeCare },
         { label: 'Tratamento de Feridas', url: linkPageWounds },
         { label: 'Consultoria', url: linkPageConsultancy },
@@ -74,9 +74,9 @@ module.exports = {
         headerTitle: 'Termos e Condições',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            Ao acessar nosso site, concorda em cumprir estes termos de serviço, 
+            todas as leis e regulamentos aplicáveis ​​e concorda que é responsável 
+            pelo cumprimento de todas as leis locais aplicáveis
         `
     },
     pageConsultancy: {
@@ -88,9 +88,9 @@ module.exports = {
         headerTitle: 'Treinamento e Consultoria',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            Mono mono mono monomono mono monom omonomoo monomono omonomoo mono
+            mono mono monomono mono monom omonomoo monomono omonomoo mono monom
+            mono mono monomono mono monom omono
         `
     },
     pageContact: {
@@ -102,9 +102,9 @@ module.exports = {
         headerTitle: 'Fale Conosco',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            Estamos à disposição e ficamos muito felizes com seu contato e também 
+            sua visita. Venha tomar um café e descobrir como podemos auxiliar em um 
+            tratamento de qualidade.
         `
     },
     pageHomeCare: {
@@ -121,18 +121,18 @@ module.exports = {
             de forma humanizada no conforto do lar
         `
     },
-    pageOurStory: {
-        link: linkPageOurStory,
+    pageAboutUs: {
+        link: linkPageAboutUs,
         description: 'story story story story',
         keywords: 'mmm, nnn, ooo',
-        title: `Nossa História | ${siteName}`,
+        title: `Sobre Nós | ${siteName}`,
         thumbnail: 'img/profile.png',
-        headerTitle: 'Nossa História',
+        headerTitle: 'Sobre Nós',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            Acreditamos que fazer melhor aquilo que amamos, além de nos garantir 
+            resultados mais rápidos e duradouros, também nos proporciona conhecer 
+            pessoas e fazer a diferença em suas vidas
         `
     },
     pagePrivacy: {
@@ -144,9 +144,9 @@ module.exports = {
         headerTitle: 'Privacidade',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            É política do Regenera Cuidado respeitar a sua privacidade em 
+            relação a qualquer informação sua que possamos coletar no site 
+            Regenera Cuidado, e outros sites que possuímos e operamos
         `
     },
     pageTestimonials: {
@@ -158,9 +158,9 @@ module.exports = {
         headerTitle: 'Depoimentos',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            O diferencial de nosso trabalho é fundamentado no atendimento
+            humanizado e na qualidade do serviço prestado. Baseado em resultados,
+            pode ser constatado pelo depoimento de nossos pacientes. 
         `
     },
     pageWounds: {
@@ -172,9 +172,9 @@ module.exports = {
         headerTitle: 'Tratamento de Feridas',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
-            saúde ou de suporte, prestado por profissionais especializados 
-            de forma humanizada no conforto do lar
+            Mono mono mono monomono mono monom omonomoo monomono omonomoo mono
+            mono mono monomono mono monom omonomoo monomono omonomoo mono monom
+            mono mono monomono mono monom omono
         `
     }
 };

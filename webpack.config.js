@@ -86,6 +86,11 @@ module.exports = (env) => {
                 templateParameters: Object.assign({}, variableList, variableList.pageIndex)
             }),
             new HtmlWebpackPlugin({
+                template: "src/view/about-us/page.hbs",
+                filename: variableList.pageAboutUs.link,
+                templateParameters: Object.assign({}, variableList, variableList.pageAboutUs)
+            }),
+            new HtmlWebpackPlugin({
                 template: "src/view/conditions/page.hbs",
                 filename: variableList.pageConditions.link,
                 templateParameters: Object.assign({}, variableList, variableList.pageConditions)
@@ -104,11 +109,6 @@ module.exports = (env) => {
                 template: "src/view/homecare/page.hbs",
                 filename: variableList.pageHomeCare.link,
                 templateParameters: Object.assign({}, variableList, variableList.pageHomeCare)
-            }),
-            new HtmlWebpackPlugin({
-                template: "src/view/our-story/page.hbs",
-                filename: variableList.pageOurStory.link,
-                templateParameters: Object.assign({}, variableList, variableList.pageOurStory)
             }),
             new HtmlWebpackPlugin({
                 template: "src/view/privacy/page.hbs",
