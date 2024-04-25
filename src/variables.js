@@ -65,6 +65,20 @@ module.exports = {
         title: siteName,
         thumbnail: 'img/profile.png'
     },
+    pageAboutUs: {
+        link: linkPageAboutUs,
+        description: 'story story story story',
+        keywords: 'mmm, nnn, ooo',
+        title: `Sobre Nós | ${siteName}`,
+        thumbnail: 'img/profile.png',
+        headerTitle: 'Sobre Nós',
+        headerBackground: 'img/header-page-about-us.png',
+        headerDescription: `
+            Acreditamos que fazer melhor aquilo que amamos, além de nos garantir 
+            resultados mais rápidos e duradouros, também nos proporciona conhecer 
+            pessoas e fazer a diferença em suas vidas
+        `
+    },
     pageConditions: {
         link: linkPageConditions,
         description: 'cond cond cond cond',
@@ -114,25 +128,11 @@ module.exports = {
         title: `Assistência Domiciliar | ${siteName}`,
         thumbnail: 'img/profile.png',
         headerTitle: 'Assistência Domiciliar',
-        headerBackground: 'img/header-page-wounds.png',
+        headerBackground: 'img/header-page-homecare.png',
         headerDescription: `
             Oferecemos Assistência Domiciliar, disponibilizando cuidados de 
             saúde ou de suporte, prestado por profissionais especializados 
             de forma humanizada no conforto do lar
-        `
-    },
-    pageAboutUs: {
-        link: linkPageAboutUs,
-        description: 'story story story story',
-        keywords: 'mmm, nnn, ooo',
-        title: `Sobre Nós | ${siteName}`,
-        thumbnail: 'img/profile.png',
-        headerTitle: 'Sobre Nós',
-        headerBackground: 'img/header-page-wounds.png',
-        headerDescription: `
-            Acreditamos que fazer melhor aquilo que amamos, além de nos garantir 
-            resultados mais rápidos e duradouros, também nos proporciona conhecer 
-            pessoas e fazer a diferença em suas vidas
         `
     },
     pagePrivacy: {
@@ -142,7 +142,7 @@ module.exports = {
         title: `Privacidade | ${siteName}`,
         thumbnail: 'img/profile.png',
         headerTitle: 'Privacidade',
-        headerBackground: 'img/header-page-wounds.png',
+        headerBackground: 'img/header-page-privacy.png',
         headerDescription: `
             É política do Regenera Cuidado respeitar a sua privacidade em 
             relação a qualquer informação sua que possamos coletar no site 
@@ -156,7 +156,7 @@ module.exports = {
         title: `Depoimentos | ${siteName}`,
         thumbnail: 'img/profile.png',
         headerTitle: 'Depoimentos',
-        headerBackground: 'img/header-page-wounds.png',
+        headerBackground: 'img/header-page-testimonials.png',
         headerDescription: `
             O diferencial de nosso trabalho é fundamentado no atendimento
             humanizado e na qualidade do serviço prestado. Baseado em resultados,
