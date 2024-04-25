@@ -86,7 +86,7 @@ module.exports = {
         title: `Termos e condições | ${siteName}`,
         thumbnail: 'img/profile.png',
         headerTitle: 'Termos e Condições',
-        headerBackground: 'img/header-page-wounds.png',
+        headerBackground: 'img/header-page-conditions.png',
         headerDescription: `
             Ao acessar nosso site, concorda em cumprir estes termos de serviço, 
             todas as leis e regulamentos aplicáveis ​​e concorda que é responsável 

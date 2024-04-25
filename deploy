@@ -9,13 +9,13 @@ fi
 
 echo "Fazendo deploy $(date '+%d/%m/%Y %H:%M')"
 
-./npm run prod
+./npm run dev
 
 cd dist
 
-pdw
+pwd
 
-if [ -f ".git" ]; then
+if [ -d ".git" ]; then
     rm -Rf .git
 fi
 
@@ -25,7 +25,8 @@ git init
 git remote add origin git@github.com:regeneracuidado/regeneracuidado.github.io.git
 git config user.name "Ricardo Pereira"
 git config user.email "contato@ricardopedias.com.br"
+
 git add .
 git commit -m "Deploy em $(date '+%d/%m/%Y %H:%M')"
 git push origin main --force
-cd ../
+cd -
