@@ -38,24 +38,28 @@ body > div.contact-bar {
                 display: block;
                 padding-left: 10px;
                 text-decoration: none;
+                color: #274760;
 
-                & i {
+                &:visited {
                     color: #274760;
                 }
 
                 & b {
+                    display: block;
                     font-size: 14px;
                     font-weight: bold;
+                    margin-bottom: 10px;
                 }
 
-                &:visited  b {
-                    color: #274760;
-                }
+                // &:visited  b {
+                //     color: #274760;
+                // }
     
                 & p {
+                    display: block;
                     font-size: 18px;
                     color: #c2c2c2;
-                    padding-top: 10px;
+                    // padding-top: 10px;
                 }
             }
 

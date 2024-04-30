@@ -18,7 +18,7 @@ module.exports = (env) => {
         devtool: environment === 'production' ? 'hidden-source-map' : 'inline-source-map',
         output: {
             path: path.resolve(__dirname, 'dist'),
-            filename: '[name].js',
+            filename: '[name].[chunkhash].js',
             // publicPath: "",
             clean: true,
         },
@@ -77,8 +77,14 @@ module.exports = (env) => {
                     { from: 'src/img/*.png', to: "/application/dist/img/[name][ext]" },
                 ],
             }),
+            new CopyPlugin({
+                patterns: [
+                    'src/CNAME',
+                    { from: 'src/download/*', to: "/application/dist/download/[name][ext]" },
+                ],
+            }),
             new MiniCssExtractPlugin({
-                filename: '[name].css',
+                filename: '[name].[chunkhash].css',
             }),
             new HtmlWebpackPlugin({
                 template: "src/view/index/page.hbs",

@@ -25,7 +25,7 @@ module.exports = {
     cep          : '12.308-510',
     city         : 'Jacareí, SP',
     email        : 'comercial@regeneracuidado.com.br',
-    downloadEbook : '#',
+    downloadEbook : './download/e-book-regenera.pdf',
     headerLinks : [
         { icon: 'fa-house', label: 'Home', url: linkPageIndex },
         { icon: 'fa-dove', label: 'Sobre Nós', url: linkPageAboutUs },
