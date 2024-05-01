@@ -22,9 +22,11 @@ module.exports = {
     siteName     : siteName,
     phone        : '(12) 9 9798-5757',
     address      : 'Rua Dr. Popílio Mercadante, 398 - Sala 403',
+    district     : 'Centro',
     cep          : '12.308-510',
-    city         : 'Jacareí, SP',
+    city         : 'Jacareí - SP',
     email        : 'comercial@regeneracuidado.com.br',
+    embedMap     : 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d916.0678829543353!2d-45.96296603036879!3d-23.305904998686014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdcb72e9a29847%3A0xd6b0d24cc02c4552!2sR.%20Dr.%20Pomp%C3%ADlio%20Mercadante%2C%20398%20-%20403%20-%20Centro%2C%20Jacare%C3%AD%20-%20SP%2C%2012308-510!5e0!3m2!1spt-BR!2sbr!4v1714588546198!5m2!1spt-BR!2sbr',
     downloadEbook : './download/e-book-regenera.pdf',
     headerLinks : [
         { icon: 'fa-house', label: 'Home', url: linkPageIndex },
@@ -100,11 +102,10 @@ module.exports = {
         title: `Treinamento e Consultoria | ${siteName}`,
         thumbnail: 'img/profile.png',
         headerTitle: 'Treinamento e Consultoria',
-        headerBackground: 'img/header-page-wounds.png',
+        headerBackground: 'img/header-page-consultancy.png',
         headerDescription: `
-            Mono mono mono monomono mono monom omonomoo monomono omonomoo mono
-            mono mono monomono mono monom omonomoo monomono omonomoo mono monom
-            mono mono monomono mono monom omono
+            Uma equipe treinada, que tenha claro as atividades a serem realizadas,
+            é muito mais engajada e produz resultados muito melhores!
         `
     },
     pageContact: {
@@ -114,7 +115,7 @@ module.exports = {
         title: `Fale Conosco | ${siteName}`,
         thumbnail: 'img/profile.png',
         headerTitle: 'Fale Conosco',
-        headerBackground: 'img/header-page-wounds.png',
+        headerBackground: 'img/header-page-contact.png',
         headerDescription: `
             Estamos à disposição e ficamos muito felizes com seu contato e também 
             sua visita. Venha tomar um café e descobrir como podemos auxiliar em um 
@@ -172,9 +173,8 @@ module.exports = {
         headerTitle: 'Tratamento de Feridas',
         headerBackground: 'img/header-page-wounds.png',
         headerDescription: `
-            Mono mono mono monomono mono monom omonomoo monomono omonomoo mono
-            mono mono monomono mono monom omonomoo monomono omonomoo mono monom
-            mono mono monomono mono monom omono
+            A cicatrização de feridas complexas exige conhecimento, uso adequado 
+            de tecnologias e uma visão sistêmica da pessoa que sofre com este estigma. 
         `
     }
 };

@@ -97,15 +97,40 @@ body article {
     & picture {
         display: block;
         text-align: center;
-        margin: 30px;
+        margin: 5%;
 
         & img {
             display: inline-block;
-            width: 320px;
+            width: 90%;
             height: auto;
         }
     }
+
+    // & picture {
+    //     display: block;
+    //     text-align: center;
+    //     margin: 30px;
+
+    //     & img {
+    //         display: inline-block;
+    //         width: 320px;
+    //         height: auto;
+    //     }
+    // }
 }
+
+@media (min-width:400px) { 
+    body article {
+        & picture {
+            margin: 30px;
+
+            & img {
+                width: 320px;
+            }
+        }
+    }
+}
+
 
 // Tablet Devices
 // Medium      ≥768px  = 720px

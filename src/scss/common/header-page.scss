@@ -23,8 +23,10 @@ body > header.page {
 
         & img {
             display: inline-block;
-            width: 400px;
-            height: 230px;
+            width: 100%;
+            height: auto;
+            // width: 400px;
+            // height: 230px;
             margin-top: 50px; 
             transform: scale(.8);
         }
@@ -62,8 +64,26 @@ body > header.page {
     }
 }
 
+@media (min-width:400px) { 
+    body > header.page {
+        & > div.mask {
+            & img {
+                width: 400px;
+                height: 230px;
+            }
+        }
+    }
+}
+
 @media (min-width:576px) { 
     body > header.page {
+        & > div.mask {
+            & img {
+                width: 400px;
+                height: 230px;
+            }
+        }
+
         & > div.content {
             & h1 {
                 font-size: 32px;

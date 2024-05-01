@@ -1,39 +1,28 @@
 <div class="holder">
     <article class="wrap">
-        <h2>Mono monomon monom mono mon momonomo</h2>
 
-        <h3>Monomon monom mono</h3>
+        <h2>Faça-nos uma visita</h2>
 
-        <picture class="right">
-            <img src="img/page-wounds.png">
-        </picture>
+        <address>
+            <p>
+                {{ address }}
+                
+                <br>
+                
+                {{ district }}, {{ city }}, {{ cep }}
+            </p>
 
-        <p>
-            Momonomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo
-        </p>
-
-        <p>
-            Momonomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo
-        </p>
-
-        <h3>Monomon monom mono</h3>
-
-        <p>
-            Momonomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo
-        </p>
-
-        <h3>Monomon monom mono</h3>
-
-        <p>
-            Momonomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo monomon monom mono mon momonomo
-            monomon monom mono mon momonomo
-        </p>
+            <div>
+                <iframe src="{{ embedMap }}"
+                    width="100%"
+                    height="400"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </address>
     </article>
 </div>
+

@@ -20,10 +20,10 @@ footer.content {
             grid-area: logo;
             position: relative;
             left: 50%;
-            width: 313px;
-            height: 241px;
-            margin-left: -156px;
-            margin-top: -70px;
+            width: 210px;
+            height: 162px;
+            margin-left: -105px;
+            margin-top: -50px;
         }
 
         & > div {
@@ -151,6 +151,13 @@ footer.bottom {
                     'one one one'
                     'two . three';
                 grid-template-columns: 45% auto 45%;
+
+                & > img {
+                    width: 313px;
+                    height: 241px;
+                    margin-left: -156px;
+                    margin-top: -70px;
+                }
 
                 & div.column-one {
                     text-align: left;
