@@ -34,16 +34,17 @@ body.index .action-bar {
                 display: block;
                 padding-left: 10px;
                 text-decoration: none;
+                color: #274760;
 
+                &:visited {
+                    color: #274760;
+                }
+                
                 & b {
                     font-size: 14px;
                     font-weight: bold;
                 }
 
-                &:visited  b{
-                    color: #274760;
-                }
-    
                 & p {
                     font-size: 18px;
                     color: #c2c2c2;
