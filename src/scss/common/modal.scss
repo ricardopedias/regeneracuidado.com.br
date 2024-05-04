@@ -1,0 +1,63 @@
+
+$navHeight: 80px;
+
+// Mobile Devices
+// Extra small <576px  = 100%
+// Small       ≥576px  = 540px
+
+body.modal {
+    position: fixed;
+    width: 100%;
+
+    div.modal {
+        display: block;
+    }
+}
+
+div.modal {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .3);
+    height: 100vh;
+    overflow-y: hidden;
+
+    & section {
+        position: relative;
+        display: block;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 5px;
+        box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+
+        & button {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            width: 30px;
+            height: 30px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            border: 0;
+            border-radius: 5px;
+            background-color: transparent;
+            color: rgba(0, 0, 0, .3);
+
+            &:hover {
+                background-color: #eee;
+                color: rgba(0, 0, 0, .8);
+            }
+        }
+
+        & iframe {
+            position: absolute;
+            top: 60px;
+            left: 15px;
+            border-radius: 5px;
+        }
+    }
+}
